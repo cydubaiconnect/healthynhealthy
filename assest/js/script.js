@@ -228,3 +228,19 @@ function searchBox() {
     research.style.display = "none";
     head.style.display = "flex";
   }
+
+
+
+  
+
+  let bar = document.querySelector('.sideleft');
+  function showActive(){
+    bar.classList.toggle('sideshow');
+    bar.classList.remove('closeBarMenu');
+  }
+
+  function closebarMenu() {
+    bar.classList.toggle('closeBarMenu');
+    bar.classList.remove('sideshow');
+    
+  }

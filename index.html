@@ -197,8 +197,63 @@
             </div>
           </header>
         </div>
+        <div class="sideleft">
+          <div class="sidebar">
+              <nav>
 
+               <div class="closeTag" style="text-align: right; padding-right: 10%; font-size: 2em; margin-bottom: .5em;"  onclick="closebarMenu()"><box-icon name='arrow-back' color='#00a149' ></box-icon></div>
+                  <ul>
+                      <li class="dropdown accordion-list">MENU <box-icon name='chevron-down'></box-icon>
+                          <ul class="nested-list">
+                              <li><a href="our-menu.html">MENU CAFE</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown accordion-list">SHOP <box-icon name='chevron-down'></box-icon>
+                          <ul class="nested-list">
+                              <li>BAKERY</li>
+                              <li>WHOLE GRAIN VEGAN</li>
+                              <li>WHOLE GRAIN NON-VEGAN</li>
+                              <li>WHOLE GRAIN GLUTEN FREE</li>
+                              <li>KETO</li>
+                              <li>GROCERY</li>
+                              <li>EBOOKS</li>
+                              <li>FITNESS ACCESSORIES</li>
+                          </ul>
+                      </li>
+                      <li>BLOG</li>
+                      <li class="dropdown accordion-list">ABOUT US <box-icon name='chevron-down'></box-icon>
+                          <ul class="nested-list">
+                              <li>OUR FOUNDER</li>
+                              <li>ACCOLADES</li>
+                              <li>OUR STORY</li>
+                              <li>OUR BRAND STORY</li>
+                              <li>WHO WE ARE</li>
+                              <li>NUTRITION MEDIA</li>
+                              <li>HEALTH + SAFETY</li>
+                          </ul>
+                      </li>
+                      <li class="dropdown accordion-list">CONTACT <box-icon name='chevron-down'></box-icon>
+                          <ul class="nested-list">
+                              <li>MEAL PREP</li>
+                              <li>CHILD NUTRITION</li>
+                              <li>CORPORATE WELLNESS</li>
+                              <li>SCHOOL NUTRITION</li>
+                              <li>GREEN SMOOTHIE PACK</li>
+                              <li>HEALTHY GROCERY SHOPPER</li>
+                          </ul>
+                      </li>
+                  </ul>
+              </nav>
 
+              <div class="blogIcons">
+                <span><box-icon name='instagram-alt' type='logo' color='#00a149' ></box-icon></span>
+                <span><box-icon name='facebook-circle' type='logo' color='#00a149' ></box-icon></span>
+                <span><box-icon name='whatsapp-square' type='logo' color='#00a149' ></box-icon></span>
+                <span><box-icon name='twitter' type='logo' color='#00a149' ></box-icon></span>
+              </div>
+          </div>
+      </div>
+  
 
 
 
@@ -743,13 +798,13 @@
                         <br>
 
                         
-                        <h3 style="color: #F9FDFB; z-index: 100; position: absolute;">MOUTH WATERING HOT MEALS YOU CAN'T RESIST</h3>
+                        <h4 style="color: #F9FDFB; z-index: 100; position: absolute;">MOUTH WATERING HOT MEALS YOU CAN'T RESIST</h4>
                         
-                        <br><br><br>
+                        <br><br>
                         <h3>₦4500</h3>
                         <br><br><br><br><br>
                         <button>ORDER NOW</button>
-                        <div class="sandwich" style="z-index: 1;"> <img src="assest/media/wrap.png" alt=""></div>
+                        <div class="sand" style="z-index: 1;"> <img src="assest/media/wrap.png" alt=""></div>
                         <div  class="mousover mousover2"><img src="assest/media/h1_shape-8.png" alt=""></div>
                     </div>
                    
@@ -784,7 +839,8 @@
                     </div>
                 
                         <div class="image-list ">
-                            <div class="card1">
+                          <!--card1-->
+                            <div class="car1">
                           <img
                             class="image-item "
                             src="assest/media/watermelon-juice-abuja.png"
@@ -808,7 +864,7 @@
                         </div>
         
         
-                        <div class="card2">
+                        <div class="car2">
                             <img
                               class="image-item"
                               src="assest/media/cupcake.png"
@@ -830,7 +886,7 @@
                             </div>
                           </div>
         
-                          <div class="card3">
+                          <div class="car3">
                             <img
                               class="image-item"
                               src="assest/media/virgin-coconut-oil-abuja.png"
@@ -853,7 +909,7 @@
                           </div>
         
         
-                          <div class="card4">
+                          <div class="car4">
                             <img
                               class="image-item"
                               src="assest/media/DATE-SYRUP.png"
@@ -874,7 +930,7 @@
                           </div>
                           </div>
         
-                          <div class="card5">
+                          <div class="car5">
                             <img
                               class="image-item"
                               src="assest/media/Veg.png"
@@ -895,7 +951,7 @@
                             
                             </div>
                           </div>
-                          <div class="card6">
+                          <div class="car6">
                             <img
                               class="image-item"
                               src="assest/media/gluten-free-cookies.png"
@@ -917,7 +973,7 @@
                           </div>
         
         
-                          <div class="card7">
+                          <div class="car7">
                             <img
                               class="image-item"
                               src="assest/media/Keto-Almond-Flour-Bread.png"
@@ -939,7 +995,7 @@
                               </div>
                           </div>
         
-                          <div class="card8">
+                          <div class="car8">
                             <img
                               class="image-item"
                               src="assest/media/ketosandwich.png"
@@ -1130,13 +1186,39 @@
 
     <script src="assest/js/script.js"> </script>
 
-    <script>
+    <script defer>
 
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.querySelector('.loader-container').style.display = 'none';
     }, 5000);
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionListItems = document.querySelectorAll('.accordion-list');
+
+    accordionListItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            const nestedList = this.querySelector('.nested-list');
+            const isOpen = nestedList.classList.contains('open');
+
+            // Close all lists
+            accordionListItems.forEach(function (otherItem) {
+                const otherNestedList = otherItem.querySelector('.nested-list');
+                otherNestedList.classList.remove('open');
+            });
+
+            // Toggle the current list
+            if (!isOpen) {
+                nestedList.classList.add('open');
+            }
+        });
+    });
+});
+
+
+
   </script>
     
 </body>

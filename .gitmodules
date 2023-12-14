@@ -1,0 +1,3 @@
+[submodule "healthynhealthy"]
+    path = healthynhealthy
+    url = https://github.com/cydubaiconnect/healthynhealthy.git

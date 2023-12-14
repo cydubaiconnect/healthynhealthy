@@ -131,12 +131,6 @@ html body .container-fluid .heading-section .searchBar form .inputBox1 input {
   font-size: 1.5em;
   padding: 1.5em 0 1.4em 2em;
 }
-html body .container-fluid .heading-section .searchBar form .inputBox1 input ::-moz-placeholder {
-  border: 5px solid red;
-}
-html body .container-fluid .heading-section .searchBar form .inputBox1 input ::placeholder {
-  border: 5px solid red;
-}
 html body .container-fluid .heading-section header {
   width: 98%;
   display: flex;
@@ -2552,7 +2546,6 @@ html body .container-fluid .section6 .gridsection .grid3 img {
   html body .container-fluid .section6 .gridsection {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, auto));
-    border: 5px solid red;
     width: 100%;
     position: relative;
   }

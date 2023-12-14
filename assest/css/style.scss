@@ -141,9 +141,7 @@ html {
                                 font-size: 1.5em;
                                 padding: 1.5em 0 1.4em 2em;
 
-                                ::placeholder {
-                                    border: 5px solid red;
-                                }
+                               
                             }
                         }
                     }
@@ -2628,7 +2626,6 @@ html {
                     .gridsection {
                         display: grid;
                         grid-template-columns: repeat(auto-fit, minmax(500px, auto));
-                        border: 5px solid red;
                         width: 100%;
                         position: relative;
     

@@ -1,0 +1,3565 @@
+@import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+html body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+html body .loader-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  background-color: #faf7f2;
+  overflow: hidden;
+}
+html body .lds-roller {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+  position: fixed;
+}
+html body .lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+html body .lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #b82828;
+  margin: -4px 0 0 -4px;
+}
+html body .lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+  top: 63px;
+  left: 63px;
+}
+html body .lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+  top: 68px;
+  left: 56px;
+}
+html body .lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+  top: 71px;
+  left: 48px;
+}
+html body .lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+  top: 72px;
+  left: 40px;
+}
+html body .lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+  top: 71px;
+  left: 32px;
+}
+html body .lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+  top: 68px;
+  left: 24px;
+}
+html body .lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+  top: 63px;
+  left: 17px;
+}
+html body .lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+html body .container-fluid {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assest/media/h2_shape.jpg);
+  padding-bottom: 5em;
+}
+html body .container-fluid .heading-section {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 700;
+  top: 0%;
+}
+html body .container-fluid .heading-section .searchBar {
+  display: none;
+  width: 100%;
+  transition: display 0.8s ease-in-out;
+}
+html body .container-fluid .heading-section .searchBar form {
+  width: 100%;
+}
+html body .container-fluid .heading-section .searchBar form .inputBox1 {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+html body .container-fluid .heading-section .searchBar form .inputBox1 input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.5em;
+  padding: 1.5em 0 1.4em 2em;
+}
+html body .container-fluid .heading-section .searchBar form .inputBox1 input ::-moz-placeholder {
+  border: 5px solid red;
+}
+html body .container-fluid .heading-section .searchBar form .inputBox1 input ::placeholder {
+  border: 5px solid red;
+}
+html body .container-fluid .heading-section header {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: display 0.8s ease-out;
+}
+html body .container-fluid .heading-section header .nav-content {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html body .container-fluid .heading-section header .nav-content .logo {
+  cursor: pointer;
+}
+html body .container-fluid .heading-section header .nav-content .logo img {
+  width: 5em;
+}
+html body .container-fluid .heading-section header .nav-content nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5em;
+       column-gap: 5em;
+}
+html body .container-fluid .heading-section header .nav-content nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+}
+html body .container-fluid .heading-section header .nav-content nav ul li {
+  list-style-type: none;
+}
+html body .container-fluid .heading-section header .nav-content nav ul .dropdown ul {
+  display: none;
+  position: absolute;
+  top: 80%;
+  background-color: #4dbb7d;
+  color: #fff;
+  border-radius: 4px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 1em 1em 0.2em;
+  font-size: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+html body .container-fluid .heading-section header .nav-content nav ul .dropdown ul li {
+  padding-bottom: 2em;
+  padding: 0.5em 1em;
+}
+html body .container-fluid .heading-section header .nav-content nav ul .dropdown ul li a {
+  color: #fffcff;
+  padding-bottom: 2em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+html body .container-fluid .heading-section header .nav-content nav ul .dropdown ul :hover {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #ffc634;
+  padding: 0.5em 1em;
+}
+html body .container-fluid .heading-section header .nav-content nav ul .dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body .container-fluid .heading-section header .nav-content nav ul :hover ul {
+  display: block;
+}
+html body .container-fluid .heading-section header .nav-content .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  position: relative;
+}
+html body .container-fluid .heading-section header .nav-content .right .contact-details {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+html body .container-fluid .heading-section header .nav-content .right .contact-details .text {
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html body .container-fluid .heading-section header .nav-content .right .contact-details span {
+  font-size: 3em;
+}
+html body .container-fluid .heading-section header .nav-content .right .icons {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  cursor: pointer;
+}
+html body .container-fluid .heading-section header .nav-content .right .icons .count {
+  position: absolute;
+  top: 18%;
+  right: 2%;
+  background-color: #00a149;
+  padding: 0 4px;
+  border-radius: 50%;
+  font-size: 0.7em;
+}
+html body .container-fluid .heading-section header .nav-content .right .icons .count2 {
+  position: absolute;
+  top: 20%;
+  right: 19%;
+  background-color: #00a149;
+  padding: 0 4px;
+  border-radius: 50%;
+  font-size: 0.7em;
+}
+html body .container-fluid .heading-section header .nav-content .right .icons span {
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  padding: 1em 1.2em;
+}
+html body .container-fluid .heading-section header .nav-content .right .icons :hover {
+  background-color: #ffc634;
+  border-color: #ffc634;
+}
+@media screen and (max-width: 1300px) {
+  html body .container-fluid .heading-section {
+    display: none;
+  }
+}
+html body .container-fluid .head-mobile-view {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  html body .container-fluid .head-mobile-view {
+    display: flex;
+    background-color: #fff;
+    padding: 1em 0;
+  }
+  html body .container-fluid .head-mobile-view header {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .head-mobile-view header .navBar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  html body .container-fluid .head-mobile-view header .navBar #menu .bar01,
+  html body .container-fluid .head-mobile-view header .navBar #menu .bar03 {
+    background-color: #1f2d3d;
+    width: 25px;
+    height: 2px;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+  html body .container-fluid .head-mobile-view header .navBar #menu .bar02 {
+    background-color: #1f2d3d;
+    width: 15px;
+    height: 2px;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+  html body .container-fluid .head-mobile-view header .navBar .change .bar01 {
+    transform: translate(0, 9px) rotate(-45deg);
+  }
+  html body .container-fluid .head-mobile-view header .navBar .change .bar02 {
+    opacity: 0;
+  }
+  html body .container-fluid .head-mobile-view header .navBar .change .bar03 {
+    transform: translate(0, -9px) rotate(45deg);
+  }
+  html body .container-fluid .head-mobile-view header .navBar .logo {
+    cursor: pointer;
+  }
+  html body .container-fluid .head-mobile-view header .navBar .logo img {
+    width: 5em;
+  }
+}
+html body .container-fluid .section1 {
+  background-image: url(/assest/media/h2_ellipse-background.png);
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: 120%;
+  background-position-y: 100%;
+  position: relative;
+  padding-top: 20em;
+}
+html body .container-fluid .section1 .elementor {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body .container-fluid .section1 .elementor .widget {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+html body .container-fluid .section1 .elementor .widget .left {
+  width: 50%;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html body .container-fluid .section1 .elementor .widget .left h2 {
+  font-size: 5em;
+  color: #1b2f2f;
+}
+html body .container-fluid .section1 .elementor .widget .left h6 {
+  font-size: 2em;
+  color: #1b2f2f;
+}
+html body .container-fluid .section1 .elementor .widget .left p {
+  font-size: 1.3em;
+}
+html body .container-fluid .section1 .elementor .widget .left .order {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  font-size: 2em;
+}
+html body .container-fluid .section1 .elementor .widget .left .order button {
+  background-color: #ffc634;
+  padding: 1em 2em;
+  border-radius: 8px;
+  border-color: #ffc634;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html body .container-fluid .section1 .elementor .widget .right {
+  position: relative;
+}
+html body .container-fluid .section1 .elementor .widget .right .shallot {
+  position: absolute;
+  bottom: -100%;
+  right: -100%;
+}
+html body .container-fluid .section1 .elementor .widget .right .burger {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  transform: translate(-50%, -50%);
+  transform-origin: center; /* Set the transform origin to the center */
+  transition: transform 0.5s ease;
+}
+html body .container-fluid .section1 .elementor .widget .right .basil {
+  position: absolute;
+  bottom: -300px;
+  right: -150px;
+  z-index: 100;
+}
+html body .container-fluid .section1 .elementor .widget .right .peper1 {
+  position: absolute;
+  bottom: -450px;
+  left: -100px;
+}
+html body .container-fluid .section1 .elementor .widget .right .paper {
+  display: flex;
+}
+@media screen and (min-width: 760px) and (max-width: 1800px) {
+  html body .container-fluid .section1 {
+    background-image: url(/assest/media/h2_ellipse.png);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-position-x: 100%;
+    background-position-y: -30%;
+    position: relative;
+    position: relative;
+    padding-top: 20em;
+  }
+  html body .container-fluid .section1 .elementor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 12%;
+  }
+  html body .container-fluid .section1 .elementor .widget {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  html body .container-fluid .section1 .elementor .widget .left {
+    width: 40%;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html body .container-fluid .section1 .elementor .widget .left h2 {
+    font-size: 3em;
+    color: #1b2f2f;
+  }
+  html body .container-fluid .section1 .elementor .widget .left h6 {
+    font-size: 2em;
+    color: #1b2f2f;
+  }
+  html body .container-fluid .section1 .elementor .widget .left p {
+    font-size: 1.3em;
+  }
+  html body .container-fluid .section1 .elementor .widget .left .order {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+  html body .container-fluid .section1 .elementor .widget .left .order button {
+    background-color: #ffc634;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    border-color: #ffc634;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html body .container-fluid .section1 .elementor .widget .right {
+    position: relative;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .shallot {
+    display: none;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .burger {
+    position: absolute;
+    top: 40%;
+    left: -100%;
+    transform: translate(-60%, -50%);
+    transform-origin: center; /* Set the transform origin to the center */
+    transition: transform 0.5s ease;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .burger img {
+    width: 500px;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .basil {
+    position: absolute;
+    top: -100%;
+    right: 0px;
+    z-index: 100;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .peper1 {
+    position: absolute;
+    bottom: -450px;
+    left: -100px;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .paper {
+    display: flex;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section1 {
+    width: 100%;
+    background-image: none;
+  }
+  html body .container-fluid .section1 .elementor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 12%;
+  }
+  html body .container-fluid .section1 .elementor .widget {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  html body .container-fluid .section1 .elementor .widget .left {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-bottom: 5em;
+  }
+  html body .container-fluid .section1 .elementor .widget .left h2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 2em;
+    color: #1b2f2f;
+  }
+  html body .container-fluid .section1 .elementor .widget .left h6 {
+    font-size: 1.5em;
+    color: #1b2f2f;
+  }
+  html body .container-fluid .section1 .elementor .widget .left p {
+    font-size: 1em;
+  }
+  html body .container-fluid .section1 .elementor .widget .left .order {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+  html body .container-fluid .section1 .elementor .widget .left .order button {
+    background-color: #ffc634;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    border-color: #ffc634;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html body .container-fluid .section1 .elementor .widget .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .shallot {
+    display: none;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .burger {
+    position: absolute;
+    left: 40%;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .burger img {
+    width: 300px;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .basil {
+    position: absolute;
+    top: -100%;
+    right: 0px;
+    z-index: 100;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .peper1 {
+    position: absolute;
+    bottom: -450px;
+    left: -100px;
+  }
+  html body .container-fluid .section1 .elementor .widget .right .paper {
+    display: flex;
+  }
+}
+html body .container-fluid .section01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 8em 0;
+}
+html body .container-fluid .section01 .restaurant-menu {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .container-fluid .section01 .restaurant-menu .menu1 {
+  width: 100%;
+}
+html body .container-fluid .section01 .restaurant-menu .menu {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10em;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list h4 {
+  text-align: center;
+  color: #000;
+  font-size: 4em;
+  padding-bottom: 0.5em;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ourlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  padding-top: 2em;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList h1 {
+  font-size: 1em !important;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  height: 25vh;
+  width: 80%;
+  border: 2px solid #e5e5e5;
+  border-radius: 30px;
+  background-color: #e5f5ec;
+  padding: 0.5em;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 .priceTag {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 .priceTag .addCart {
+  background-color: #00a149;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList img {
+  width: 100%;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .vegMeal {
+  border: 2px solid #ffc222;
+  padding: 1.4em 2em;
+  border-radius: 30px;
+  background-color: #ffc222;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .vegMeal:hover {
+  background-color: #00a149;
+  border-color: #00a149;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .nonVeg {
+  padding: 1.4em 2em;
+  border-radius: 30px;
+  border: 1px solid #a2b0a2;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .nonVeg:hover {
+  background-color: #00a149;
+  border: 1px solid #00a149;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ket {
+  padding: 1.4em 2em;
+  border-radius: 30px;
+  border: 1px solid #a2b0a2;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ket:hover {
+  background-color: #00a149;
+  border: 1px solid #00a149;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .Drink {
+  padding: 1.4em 2em;
+  border-radius: 30px;
+  border: 1px solid #a2b0a2;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .Drink:hover {
+  background-color: #00a149;
+  border: 1px solid #00a149;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .dess {
+  padding: 1.4em 2em;
+  border-radius: 30px;
+  border: 1px solid #a2b0a2;
+}
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .dess:hover {
+  background-color: #00a149;
+  border: 1px solid #00a149;
+}
+html body .container-fluid .section01 .restaurant-menu .menu h1 {
+  text-align: center;
+  color: #00a149;
+  font-size: 4em;
+  font-weight: 700;
+}
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  html body .container-fluid .section01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 8em 0;
+  }
+  html body .container-fluid .section01 .restaurant-menu {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu1 {
+    width: 100%;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10em;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list h4 {
+    text-align: center;
+    color: #000;
+    font-size: 4em;
+    padding-bottom: 0.5em;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ourlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2em;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList h1 {
+    font-size: 1em !important;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1em;
+         column-gap: 1em;
+    height: 25vh;
+    width: 100%;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    background-color: #e5f5ec;
+    padding: 0.5em;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 .priceTag {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 .priceTag .addCart {
+    background-color: #00a149;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList img {
+    width: 100%;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .vegMeal {
+    border: 2px solid #ffc222;
+    padding: 1em 2em;
+    border-radius: 30px;
+    background-color: #ffc222;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .vegMeal:hover {
+    background-color: #00a149;
+    border-color: #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .nonVeg {
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid #a2b0a2;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .nonVeg:hover {
+    background-color: #00a149;
+    border: 1px solid #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ket {
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid #a2b0a2;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ket:hover {
+    background-color: #00a149;
+    border: 1px solid #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .Drink {
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid #a2b0a2;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .Drink:hover {
+    background-color: #00a149;
+    border: 1px solid #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .dess {
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid #a2b0a2;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .dess:hover {
+    background-color: #00a149;
+    border: 1px solid #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu h1 {
+    text-align: center;
+    color: #00a149;
+    font-size: 4em;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 8em 0;
+  }
+  html body .container-fluid .section01 .restaurant-menu {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu1 {
+    width: 100%;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10em;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list h4 {
+    text-align: center;
+    color: #000;
+    font-size: 4em;
+    padding-bottom: 0.5em;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ourlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2em;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList h1 {
+    font-size: 1em !important;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    background-color: #e5f5ec;
+    padding: 8em 0 9em 0;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 .priceTag {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 .priceTag .addCart {
+    background-color: #00a149;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList img {
+    width: 100%;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .vegMeal {
+    width: 100%;
+    text-align: center;
+    border: 2px solid #ffc222;
+    padding: 1em 2em;
+    border-radius: 30px;
+    background-color: #ffc222;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .vegMeal:hover {
+    width: 100%;
+    text-align: center;
+    background-color: #00a149;
+    border-color: #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .nonVeg {
+    width: 100%;
+    text-align: center;
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid #a2b0a2;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .nonVeg:hover {
+    background-color: #00a149;
+    border: 1px solid #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ket {
+    padding: 1em 2em;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #a2b0a2;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ket:hover {
+    background-color: #00a149;
+    border: 1px solid #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .Drink {
+    width: 100%;
+    text-align: center;
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid #a2b0a2;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .Drink:hover {
+    background-color: #00a149;
+    border: 1px solid #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .dess {
+    width: 100%;
+    text-align: center;
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid #a2b0a2;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .dess:hover {
+    background-color: #00a149;
+    border: 1px solid #00a149;
+  }
+  html body .container-fluid .section01 .restaurant-menu .menu h1 {
+    text-align: center;
+    color: #00a149;
+    font-size: 4em;
+    font-weight: 700;
+  }
+}
+html body .container-fluid .section2 {
+  width: 90%;
+  background-color: #fff;
+  margin-top: 15em;
+  padding-bottom: 3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html body .container-fluid .section2 .elementor2 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .container-fluid .section2 .elementor2 .widget2 {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .container-fluid .section2 .elementor2 .widget2 .right h2 {
+  font-size: 4em;
+  padding-bottom: 0.1em;
+}
+html body .container-fluid .section2 .elementor2 .widget2 .right h3 {
+  font-size: 2em;
+  color: #00a149;
+}
+html body .container-fluid .section2 .elementor2 .widget2 .right h1 {
+  color: #00a149;
+  padding-top: 0.5em;
+}
+html body .container-fluid .section2 .elementor2 .widget2 .right button {
+  background-color: #ffc634;
+  padding: 1em 2em;
+  border-radius: 8px;
+  border-color: #ffc634;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  html body .container-fluid .section2 {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 5em;
+    padding-bottom: 3em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html body .container-fluid .section2 .elementor2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right h2 {
+    font-size: 3em;
+    padding-bottom: 0.1em;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right h3 {
+    font-size: 2em;
+    color: #00a149;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right h1 {
+    color: #00a149;
+    padding-top: 0.5em;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right button {
+    background-color: #ffc634;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border-color: #ffc634;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section2 {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20em;
+    padding-bottom: 3em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html body .container-fluid .section2 .elementor2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .left {
+    width: 90%;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .left img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right {
+    width: 90%;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right h2 {
+    font-size: 3em;
+    padding-bottom: 0.1em;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right h3 {
+    font-size: 2em;
+    color: #00a149;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right h1 {
+    color: #00a149;
+    padding-top: 0.5em;
+  }
+  html body .container-fluid .section2 .elementor2 .widget2 .right button {
+    background-color: #ffc634;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border-color: #ffc634;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+html body .container-fluid .section3 {
+  background-color: #fbf7e8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html body .container-fluid .section3 .elementor3 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6em 0;
+  position: relative;
+}
+html body .container-fluid .section3 .elementor3 .widget3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+html body .container-fluid .section3 .elementor3 .widget3 .elementor-text {
+  width: 30%;
+}
+html body .container-fluid .section3 .elementor3 .widget3 .elementor-text h2 {
+  font-size: 3em;
+}
+html body .container-fluid .section3 .elementor3 .widget3 .elementor-text button {
+  background-color: #ffc634;
+  padding: 1em 2em;
+  border-radius: 8px;
+  border-color: #ffc634;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html body .container-fluid .section3 .elementor3 .widget3 .rider #ride {
+  position: absolute;
+  top: 10%;
+  left: 20%; /* Adjust as needed */
+  transform: translateX(-50%);
+  transition: transform 1s ease; /* Adjust the transition speed */
+}
+html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 {
+  width: 40%;
+  text-align: right;
+}
+html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 h2 {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  font-size: 3em;
+}
+html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 button {
+  background-color: #ffc634;
+  padding: 1em 2em;
+  border-radius: 8px;
+  border-color: #ffc634;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  html body .container-fluid .section3 {
+    background-color: #fbf7e8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  html body .container-fluid .section3 .elementor3 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6em 0;
+    position: relative;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text {
+    width: 100%;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text h2 {
+    font-size: 3em;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text button {
+    background-color: #ffc634;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border-color: #ffc634;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .rider #ride {
+    position: absolute;
+    top: 30%;
+    left: -30%; /* Adjust as needed */
+    transform: translateX(-500%);
+    transition: transform 1s ease; /* Adjust the transition speed */
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 20em;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 h2 {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+    font-size: 3em;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 button {
+    background-color: #ffc634;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border-color: #ffc634;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section3 {
+    background-color: #fbf7e8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  html body .container-fluid .section3 .elementor3 {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6em 0;
+    position: relative;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text {
+    width: 100%;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text h2 {
+    font-size: 3em;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text button {
+    background-color: #ffc634;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border-color: #ffc634;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .rider #ride {
+    display: none;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5em;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 h2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+    font-size: 3em;
+  }
+  html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 button {
+    background-color: #ffc634;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border-color: #ffc634;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+html body .container-fluid .section4 {
+  width: 100%;
+  margin: 0;
+  padding: 8em 0;
+}
+html body .container-fluid .section4 .slider-wrapper {
+  width: 67%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0.1em;
+}
+html body .container-fluid .section4 .slider-wrapper .head-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+html body .container-fluid .section4 .slider-wrapper .head-text h2 {
+  font-size: 3em;
+}
+html body .container-fluid .section4 .slider-wrapper .head-text a {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.1em;
+       column-gap: 0.1em;
+  text-decoration: none;
+  font-size: 1em;
+}
+html body .container-fluid .section4 .slider-wrapper .control {
+  width: 98%;
+  top: 50%;
+  right: 0%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 900;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list {
+  display: flex;
+  -moz-column-gap: 1.6em;
+       column-gap: 1.6em;
+  align-items: center;
+  transition: transform 0.5s ease;
+  padding: 0 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 {
+  width: 50%;
+  height: 50vh;
+  border-radius: 30px;
+  border: 4px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details {
+  padding: 0 1em;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h2 {
+  font-size: 1em;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h1 {
+  font-size: 1em;
+  color: red;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details p {
+  color: #979797;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price span {
+  display: flex;
+  align-items: center;
+  background-color: #00a149;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 img {
+  transform: scale(0.6);
+  background-color: #fbf7e8;
+  height: 30vh;
+  transition: transform 0.3s ease;
+}
+html body .container-fluid .section4 .slider-wrapper .image-list .card1 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card2 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card3 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card4 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card5 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card6 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card7 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card8 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card9 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card10 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card11 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card12 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale {
+  transform: scale(1);
+  border-radius: 30px;
+}
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  html body .container-fluid .section4 {
+    width: 100%;
+    margin: 0;
+    padding: 8em 0;
+  }
+  html body .container-fluid .section4 .slider-wrapper {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0.1em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .head-text h2 {
+    font-size: 3em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .head-text a {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 0.1em;
+         column-gap: 0.1em;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .control {
+    width: 98%;
+    top: 50%;
+    right: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 900;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list {
+    display: flex;
+    -moz-column-gap: 1.6em;
+         column-gap: 1.6em;
+    align-items: center;
+    transition: transform 0.5s ease;
+    padding: 0 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 {
+    width: 39%;
+    height: 42vh;
+    border-radius: 30px;
+    border: 4px solid #e5e5e5;
+    background-color: #fff;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details {
+    padding: 0 1em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h2 {
+    font-size: 1em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h1 {
+    font-size: 1em;
+    color: red;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details p {
+    color: #979797;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price span {
+    display: flex;
+    align-items: center;
+    background-color: #00a149;
+    border-radius: 10px;
+    padding: 0.5em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 img {
+    transform: scale(0.6);
+    background-color: #fbf7e8;
+    height: 21.5vh;
+    transition: transform 0.3s ease;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale {
+    transform: scale(1);
+    border-radius: 30px;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section4 {
+    width: 100%;
+    margin: 0;
+    padding: 8em 0;
+  }
+  html body .container-fluid .section4 .slider-wrapper {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0.1em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .head-text h2 {
+    font-size: 2em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .head-text a {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 0.1em;
+         column-gap: 0.1em;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .control {
+    width: 98%;
+    top: 50%;
+    right: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 900;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list {
+    width: 100%;
+    display: flex;
+    -moz-column-gap: 1.6em;
+         column-gap: 1.6em;
+    align-items: center;
+    transition: transform 0.5s ease;
+    padding: 0 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 {
+    width: 500px;
+    height: 65vh;
+    border-radius: 30px;
+    border: 4px solid #e5e5e5;
+    background-color: #fff;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details {
+    padding: 0 1em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h2 {
+    font-size: 1em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h1 {
+    font-size: 1em;
+    color: red;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details p {
+    color: #979797;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price span {
+    display: flex;
+    align-items: center;
+    background-color: #00a149;
+    border-radius: 10px;
+    padding: 0.5em;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 img {
+    transform: scale(0.6);
+    background-color: #fbf7e8;
+    height: 30vh;
+    width: 270px;
+    transition: transform 0.3s ease;
+  }
+  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale {
+    transform: scale(1);
+    border-radius: 30px;
+  }
+}
+html body .container-fluid .section05 {
+  margin-top: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .container-fluid .section05 .signup {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding-bottom: 2em;
+}
+html body .container-fluid .section05 .signup .signup-Details {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .container-fluid .section05 .signup .signup-Details form {
+  width: 100%;
+  padding-top: 2em;
+}
+html body .container-fluid .section05 .signup .signup-Details form .error-text {
+  display: none;
+  width: 100%;
+  padding: 1em 0;
+  background-color: #db731e;
+  text-align: center;
+  color: #fff;
+}
+html body .container-fluid .section05 .signup .signup-Details form button {
+  width: 100%;
+  padding: 1em 0;
+  background-color: #00a149;
+  border-radius: 10px;
+  border: 3px solid #00a149;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2em;
+}
+html body .container-fluid .section05 .signup .signup-Details form .signupInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid #e6e6e6;
+}
+html body .container-fluid .section05 .signup .signup-Details form .signupInput input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1em 0;
+  background-color: #fff;
+}
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  html body .container-fluid .section05 {
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section05 .signup {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding-bottom: 2em;
+  }
+  html body .container-fluid .section05 .signup .signup-Details {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form {
+    width: 100%;
+    padding-top: 2em;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form .error-text {
+    display: none;
+    width: 100%;
+    padding: 1em 0;
+    background-color: #db731e;
+    text-align: center;
+    color: #fff;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form button {
+    width: 100%;
+    padding: 1em 0;
+    background-color: #00a149;
+    border-radius: 10px;
+    border: 3px solid #00a149;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form .signupInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #e6e6e6;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form .signupInput input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1em 0;
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section05 {
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section05 .signup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding-bottom: 2em;
+  }
+  html body .container-fluid .section05 .signup .signup-Details {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form {
+    width: 100%;
+    padding-top: 2em;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form .error-text {
+    display: none;
+    width: 100%;
+    padding: 1em 0;
+    background-color: #db731e;
+    text-align: center;
+    color: #fff;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form button {
+    width: 100%;
+    padding: 1em 0;
+    background-color: #00a149;
+    border-radius: 10px;
+    border: 3px solid #00a149;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form .signupInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #e6e6e6;
+  }
+  html body .container-fluid .section05 .signup .signup-Details form .signupInput input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1em 0;
+    background-color: #fff;
+  }
+}
+html body .container-fluid .section5 {
+  background-color: #f7f2e2;
+}
+html body .container-fluid .section5 .textimonial {
+  width: 100%;
+  position: relative;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5em;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial h2 {
+  font-family: "Dancing Script", cursive;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial #quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 60px;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial #quote-carousel .carousel-control {
+  background: none;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+  color: #00a149;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial #quote-carousel .carousel-indicators {
+  position: relative;
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-right: -19px;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial #quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 0.4s ease-in;
+  vertical-align: middle;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial #quote-carousel .carousel-indicators .active {
+  width: 128px;
+  height: 128px;
+  opacity: 1;
+  transition: all 0.2s;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial .item blockquote {
+  border-left: none;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #979797;
+}
+html body .container-fluid .section5 .textimonial .ourtextimonial .item blockquote p:before {
+  content: "\f10d";
+  font-family: "Fontawesome";
+  float: left;
+  margin-right: 10px;
+}
+html body .container-fluid .section6 {
+  width: 100%;
+}
+html body .container-fluid .section6 .gridsection {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+html body .container-fluid .section6 .gridsection h2 {
+  font-family: "Norican", cursive;
+  font-weight: 700;
+  font-size: 3em;
+}
+html body .container-fluid .section6 .gridsection h1 {
+  font-size: 6em;
+  font-weight: 700;
+}
+html body .container-fluid .section6 .gridsection button {
+  padding: 1em 2em;
+  border-radius: 10px;
+  border-color: #fff;
+  font-weight: 700;
+}
+html body .container-fluid .section6 .gridsection .sandwich {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+}
+html body .container-fluid .section6 .gridsection .sandwich img {
+  width: 300px !important;
+}
+html body .container-fluid .section6 .gridsection .mousover {
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform: scale(0);
+  transition: 1s ease-in-out;
+}
+html body .container-fluid .section6 .gridsection .grid1 {
+  width: 50%;
+  background-color: #00a850;
+  padding: 3em 1em 3em 4em;
+  position: relative;
+}
+html body .container-fluid .section6 .gridsection .grid1 img {
+  width: 80%;
+}
+html body .container-fluid .section6 .gridsection .grid2 {
+  width: 60%;
+  background-color: #db731e;
+  padding: 3em 1em;
+  position: relative;
+}
+html body .container-fluid .section6 .gridsection .grid2 img {
+  width: 100%;
+}
+html body .container-fluid .section6 .gridsection .grid3 {
+  width: 60%;
+  background-color: #ffc900;
+  padding: 3em 1em;
+  position: relative;
+}
+html body .container-fluid .section6 .gridsection .grid3 img {
+  width: 100%;
+}
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  html body .container-fluid .section6 {
+    width: 100%;
+  }
+  html body .container-fluid .section6 .gridsection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    width: 100%;
+    position: relative;
+  }
+  html body .container-fluid .section6 .gridsection h2 {
+    font-family: "Norican", cursive;
+    font-weight: 700;
+    font-size: 3em;
+  }
+  html body .container-fluid .section6 .gridsection h1 {
+    font-size: 6em;
+    font-weight: 700;
+  }
+  html body .container-fluid .section6 .gridsection button {
+    padding: 1em 2em;
+    border-radius: 10px;
+    border-color: #fff;
+    font-weight: 700;
+  }
+  html body .container-fluid .section6 .gridsection .sandwich {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+  }
+  html body .container-fluid .section6 .gridsection .sandwich img {
+    width: 300px !important;
+  }
+  html body .container-fluid .section6 .gridsection .mousover {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: scale(0);
+    transition: 1s ease-in-out;
+  }
+  html body .container-fluid .section6 .gridsection .grid1 {
+    width: 100%;
+    background-color: #00a850;
+    padding: 1em 1em 1em 4em;
+    position: relative;
+  }
+  html body .container-fluid .section6 .gridsection .grid1 img {
+    width: 100%;
+  }
+  html body .container-fluid .section6 .gridsection .grid2 {
+    width: 100%;
+    background-color: #db731e;
+    padding: 1em 1em;
+    position: relative;
+  }
+  html body .container-fluid .section6 .gridsection .grid2 img {
+    width: 100%;
+  }
+  html body .container-fluid .section6 .gridsection .grid3 {
+    width: 100%;
+    background-color: #ffc900;
+    padding: 3em 1em;
+    position: relative;
+  }
+  html body .container-fluid .section6 .gridsection .grid3 img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section6 {
+    width: 100%;
+  }
+  html body .container-fluid .section6 .gridsection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    width: 100%;
+    position: relative;
+  }
+  html body .container-fluid .section6 .gridsection h2 {
+    font-family: "Norican", cursive;
+    font-weight: 700;
+    font-size: 3em;
+  }
+  html body .container-fluid .section6 .gridsection h1 {
+    font-size: 6em;
+    font-weight: 700;
+  }
+  html body .container-fluid .section6 .gridsection button {
+    padding: 1em 2em;
+    border-radius: 10px;
+    border-color: #fff;
+    font-weight: 700;
+  }
+  html body .container-fluid .section6 .gridsection .sandwich {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
+  html body .container-fluid .section6 .gridsection .sandwich img {
+    width: 200px !important;
+  }
+  html body .container-fluid .section6 .gridsection .mousover {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: scale(0);
+    transition: 1s ease-in-out;
+  }
+  html body .container-fluid .section6 .gridsection .grid1 {
+    width: 100%;
+    background-color: #00a850;
+    padding: 1em 1em 1em 1em;
+    position: relative;
+  }
+  html body .container-fluid .section6 .gridsection .grid1 img {
+    width: 20%;
+  }
+  html body .container-fluid .section6 .gridsection .grid2 {
+    width: 100%;
+    background-color: #db731e;
+    padding: 1em 1em;
+    position: relative;
+  }
+  html body .container-fluid .section6 .gridsection .grid2 img {
+    width: 50%;
+  }
+  html body .container-fluid .section6 .gridsection .grid3 {
+    width: 100%;
+    background-color: #ffc900;
+    padding: 3em 1em;
+    position: relative;
+  }
+  html body .container-fluid .section6 .gridsection .grid3 img {
+    width: 50%;
+  }
+}
+html body .container-fluid .section7 {
+  width: 100%;
+}
+html body .container-fluid .section7 .elementor7 {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+html body .container-fluid .section7 .elementor7 .head-text {
+  padding-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+html body .container-fluid .section7 .elementor7 .head-text h2 {
+  font-size: 3em;
+}
+html body .container-fluid .section7 .elementor7 .head-text a {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.1em;
+       column-gap: 0.1em;
+  text-decoration: none;
+  font-size: 1em;
+}
+html body .container-fluid .section7 .elementor7 .head-text a:hover {
+  color: #00a149;
+}
+html body .container-fluid .section7 .elementor7 .image-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2em;
+}
+html body .container-fluid .section7 .elementor7 .image-list img {
+  width: 100%;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1,
+html body .container-fluid .section7 .elementor7 .image-list .card2,
+html body .container-fluid .section7 .elementor7 .image-list .card3,
+html body .container-fluid .section7 .elementor7 .image-list .card4,
+html body .container-fluid .section7 .elementor7 .image-list .card5,
+html body .container-fluid .section7 .elementor7 .image-list .card6,
+html body .container-fluid .section7 .elementor7 .image-list .card7,
+html body .container-fluid .section7 .elementor7 .image-list .card8,
+html body .container-fluid .section7 .elementor7 .image-list .card9,
+html body .container-fluid .section7 .elementor7 .image-list .card10,
+html body .container-fluid .section7 .elementor7 .image-list .card11,
+html body .container-fluid .section7 .elementor7 .image-list .card12,
+html body .container-fluid .section7 .elementor7 .image-list .card13 {
+  width: 100%;
+  height: 50vh;
+  border-radius: 30px;
+  border: 4px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card2 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card3 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card4 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card5 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card6 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card7 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card8 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card9 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card10 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card11 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card12 .details,
+html body .container-fluid .section7 .elementor7 .image-list .card13 .details {
+  padding: 0 1em;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card2 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card3 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card4 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card5 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card6 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card7 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card8 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card9 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card10 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card11 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card12 .details h2,
+html body .container-fluid .section7 .elementor7 .image-list .card13 .details h2 {
+  font-size: 1em;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card2 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card3 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card4 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card5 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card6 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card7 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card8 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card9 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card10 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card11 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card12 .details h1,
+html body .container-fluid .section7 .elementor7 .image-list .card13 .details h1 {
+  font-size: 1em;
+  color: red;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card2 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card3 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card4 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card5 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card6 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card7 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card8 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card9 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card10 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card11 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card12 .details p,
+html body .container-fluid .section7 .elementor7 .image-list .card13 .details p {
+  color: #979797;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price,
+html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price span,
+html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price span {
+  display: flex;
+  align-items: center;
+  background-color: #00a149;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price span:hover,
+html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price span:hover {
+  background-color: #ffc634;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 img,
+html body .container-fluid .section7 .elementor7 .image-list .card2 img,
+html body .container-fluid .section7 .elementor7 .image-list .card3 img,
+html body .container-fluid .section7 .elementor7 .image-list .card4 img,
+html body .container-fluid .section7 .elementor7 .image-list .card5 img,
+html body .container-fluid .section7 .elementor7 .image-list .card6 img,
+html body .container-fluid .section7 .elementor7 .image-list .card7 img,
+html body .container-fluid .section7 .elementor7 .image-list .card8 img,
+html body .container-fluid .section7 .elementor7 .image-list .card9 img,
+html body .container-fluid .section7 .elementor7 .image-list .card10 img,
+html body .container-fluid .section7 .elementor7 .image-list .card11 img,
+html body .container-fluid .section7 .elementor7 .image-list .card12 img,
+html body .container-fluid .section7 .elementor7 .image-list .card13 img {
+  transform: scale(0.6);
+  background-color: #fbf7e8;
+  height: 30vh;
+  transition: transform 0.3s ease;
+}
+html body .container-fluid .section7 .elementor7 .image-list .card1 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card2 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card3 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card4 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card5 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card6 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card7 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card8 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card9 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card10 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card11 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card12 .scale,
+html body .container-fluid .section7 .elementor7 .image-list .card13 .scale {
+  transform: scale(1);
+  border-radius: 30px;
+}
+@media screen and (min-width: 760px) and (max-width: 990px) {
+  html body .container-fluid .section7 {
+    width: 100%;
+  }
+  html body .container-fluid .section7 .elementor7 {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  html body .container-fluid .section7 .elementor7 .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3em;
+    padding-bottom: 1em;
+  }
+  html body .container-fluid .section7 .elementor7 .head-text h2 {
+    font-size: 3em;
+  }
+  html body .container-fluid .section7 .elementor7 .head-text a {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 0.1em;
+         column-gap: 0.1em;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  html body .container-fluid .section7 .elementor7 .head-text a:hover {
+    color: #00a149;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1,
+  html body .container-fluid .section7 .elementor7 .image-list .card2,
+  html body .container-fluid .section7 .elementor7 .image-list .card3,
+  html body .container-fluid .section7 .elementor7 .image-list .card4,
+  html body .container-fluid .section7 .elementor7 .image-list .card5,
+  html body .container-fluid .section7 .elementor7 .image-list .card6,
+  html body .container-fluid .section7 .elementor7 .image-list .card7,
+  html body .container-fluid .section7 .elementor7 .image-list .card8,
+  html body .container-fluid .section7 .elementor7 .image-list .card9,
+  html body .container-fluid .section7 .elementor7 .image-list .card10,
+  html body .container-fluid .section7 .elementor7 .image-list .card11,
+  html body .container-fluid .section7 .elementor7 .image-list .card12,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 {
+    width: 100%;
+    border-radius: 30px;
+    border: 4px solid #e5e5e5;
+    background-color: #e5e5e5;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details {
+    padding: 0 1em;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details h2 {
+    font-size: 1em;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details h1 {
+    font-size: 1em;
+    color: red;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details p {
+    color: #979797;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price span {
+    display: flex;
+    align-items: center;
+    background-color: #00a149;
+    border-radius: 10px;
+    padding: 0.5em;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price span:hover {
+    background-color: #ffc634;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 img {
+    transform: scale(0.6);
+    background-color: #fbf7e8;
+    transition: transform 0.3s ease;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .scale {
+    transform: scale(1);
+    border-radius: 30px;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section7 {
+    width: 100%;
+  }
+  html body .container-fluid .section7 .elementor7 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  html body .container-fluid .section7 .elementor7 .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3em;
+    padding-bottom: 1em;
+  }
+  html body .container-fluid .section7 .elementor7 .head-text h2 {
+    font-size: 3em;
+  }
+  html body .container-fluid .section7 .elementor7 .head-text a {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 0.1em;
+         column-gap: 0.1em;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  html body .container-fluid .section7 .elementor7 .head-text a:hover {
+    color: #00a149;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1,
+  html body .container-fluid .section7 .elementor7 .image-list .card2,
+  html body .container-fluid .section7 .elementor7 .image-list .card3,
+  html body .container-fluid .section7 .elementor7 .image-list .card4,
+  html body .container-fluid .section7 .elementor7 .image-list .card5,
+  html body .container-fluid .section7 .elementor7 .image-list .card6,
+  html body .container-fluid .section7 .elementor7 .image-list .card7,
+  html body .container-fluid .section7 .elementor7 .image-list .card8,
+  html body .container-fluid .section7 .elementor7 .image-list .card9,
+  html body .container-fluid .section7 .elementor7 .image-list .card10,
+  html body .container-fluid .section7 .elementor7 .image-list .card11,
+  html body .container-fluid .section7 .elementor7 .image-list .card12,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 {
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    background-color: #fff !important;
+    height: 55vh;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details {
+    padding: 0 1em;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details h2,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details h2 {
+    font-size: 1em;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details h1,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details h1 {
+    font-size: 1em;
+    color: red;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details p,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details p {
+    color: #979797;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price span,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price span {
+    display: flex;
+    align-items: center;
+    background-color: #00a149;
+    border-radius: 10px;
+    padding: 0.5em;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .details .price span:hover,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .details .price span:hover {
+    background-color: #ffc634;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 img,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 img {
+    transform: scale(0.6);
+    background-color: #fbf7e8;
+    transition: transform 0.3s ease;
+  }
+  html body .container-fluid .section7 .elementor7 .image-list .card1 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card2 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card3 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card4 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card5 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card6 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card7 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card8 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card9 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card10 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card11 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card12 .scale,
+  html body .container-fluid .section7 .elementor7 .image-list .card13 .scale {
+    transform: scale(1);
+    border-radius: 30px;
+  }
+}
+html body .container-fluid .section8 {
+  background-image: url(/assest/media/h2_bg2.png);
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5em;
+  padding: 10em 0;
+  z-index: 600;
+  overflow: hidden;
+}
+html body .container-fluid .section8 .elementor8 {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+html body .container-fluid .section8 .elementor8 .pizza {
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  transition: transform 0.8s ease;
+}
+html body .container-fluid .section8 .elementor8 .pizza img {
+  width: 40em;
+}
+html body .container-fluid .section8 .elementor8 .percent {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transition: transform 1s ease;
+}
+html body .container-fluid .section8 .elementor8 .text .text1 {
+  position: absolute;
+  right: 30%;
+}
+html body .container-fluid .section8 .elementor8 .text .text1 h1 {
+  font-family: "Norican", cursive;
+  font-size: 7em;
+  color: #fff;
+  font-weight: 700;
+}
+html body .container-fluid .section8 .elementor8 .text .text1 h2 {
+  font-size: 6em;
+  font-family: "Norican", cursive;
+  color: #fff;
+  padding-left: 40%;
+  font-weight: 700;
+}
+html body .container-fluid .section8 .elementor8 .text .text1 h3 {
+  color: #ffc222;
+  font-size: 14em;
+  font-weight: 700;
+  position: absolute;
+  top: 60%;
+}
+html body .container-fluid .section8 .elementor8 .text .text1 p {
+  position: absolute;
+  bottom: -60%;
+  color: #fff;
+  font-size: 1.18em;
+}
+html body .container-fluid .section8 .elementor8 .text .pizza-hot {
+  position: absolute;
+  left: 99%;
+  bottom: 10%;
+}
+html body .container-fluid .section9 {
+  background-image: url(/assest/media/background_footer2a.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+html body .container-fluid .section9 .elementor9 {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .container-fluid .section9 .elementor9 form {
+  width: 100%;
+  text-align: center;
+  padding: 3em 0;
+}
+html body .container-fluid .section9 .elementor9 form .inputbox {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  padding: 0.5em;
+}
+html body .container-fluid .section9 .elementor9 form .inputbox button {
+  padding: 1em;
+  background-color: #eeac00;
+  border-color: #eeac00;
+}
+html body .container-fluid .section9 .elementor9 form .inputbox input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+html body .container-fluid .section9 .elementor9 form .inputbox input ::-moz-placeholder {
+  padding-left: 1%;
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+}
+html body .container-fluid .section9 .elementor9 form .inputbox input ::placeholder {
+  padding-left: 1%;
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section9 {
+    background-image: url(/assest/media/background_footer2a.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  html body .container-fluid .section9 .elementor9 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .section9 .elementor9 form {
+    width: 100%;
+    text-align: center;
+    padding: 3em 0;
+  }
+  html body .container-fluid .section9 .elementor9 form p {
+    font-size: 1.2em;
+  }
+  html body .container-fluid .section9 .elementor9 form .inputbox {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 0.5em;
+  }
+  html body .container-fluid .section9 .elementor9 form .inputbox button {
+    padding: 1em;
+    background-color: #eeac00;
+    border-color: #eeac00;
+  }
+  html body .container-fluid .section9 .elementor9 form .inputbox input {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  html body .container-fluid .section9 .elementor9 form .inputbox input ::-moz-placeholder {
+    padding-left: 1%;
+    font-size: 1.2em;
+    font-family: "Times New Roman", Times, serif;
+  }
+  html body .container-fluid .section9 .elementor9 form .inputbox input ::placeholder {
+    padding-left: 1%;
+    font-size: 1.2em;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+html body .container-fluid .section10 {
+  background-color: #181818;
+}
+html body .container-fluid .section10 .head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body .container-fluid .section10 .head span {
+  flex: 1;
+  margin: 0 10px;
+}
+html body .container-fluid .section10 .head img {
+  width: 10%;
+}
+html body .container-fluid .section10 .elementor10 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+html body .container-fluid .section10 .elementor10 h1 {
+  color: #fff;
+}
+html body .container-fluid .section10 .elementor10 p {
+  color: #a2b0a2;
+}
+html body .container-fluid .section10 .elementor10 .impLinks {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  padding-bottom: 2em;
+}
+html body .container-fluid .section10 .elementor10 .impLinks .address .social {
+  display: flex;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+}
+html body .container-fluid .section10 .elementor10 .impLinks form .inputbox {
+  padding: 0.5em 0;
+  background-color: #fff;
+  width: 70%;
+}
+html body .container-fluid .section10 .elementor10 .impLinks form .inputbox button {
+  padding: 0.5em 0.5em;
+  background-color: #eeac00;
+  border-color: #eeac00;
+}
+html body .container-fluid .section10 .elementor10 .impLinks form .inputbox input {
+  border: none;
+  outline: none;
+}
+html body .container-fluid .section10 .elementor10 .impLinks a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+html body .container-fluid .section10 .elementor10 .impLinks h1 {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 760px) and (max-width: 990px) {
+  html body .container-fluid .section10 {
+    background-color: #181818;
+  }
+  html body .container-fluid .section10 .head {
+    width: 100%;
+  }
+  html body .container-fluid .section10 .head span {
+    flex: 1;
+    margin: 0 10px;
+  }
+  html body .container-fluid .section10 .head img {
+    width: 10%;
+  }
+  html body .container-fluid .section10 .elementor10 {
+    width: 94%;
+  }
+  html body .container-fluid .section10 .elementor10 h1 {
+    font-size: 1.5em;
+    color: #fff;
+  }
+  html body .container-fluid .section10 .elementor10 p {
+    font-size: 1.1em;
+    color: #a2b0a2;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks .address .social {
+    display: flex;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks form .inputbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: #fff;
+    width: 70%;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks form .inputbox button {
+    padding: 0.5em 0.5em;
+    background-color: #eeac00;
+    border-color: #eeac00;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks form .inputbox input {
+    border: none;
+    outline: none;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks a {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks h1 {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .section10 {
+    background-color: #181818;
+  }
+  html body .container-fluid .section10 .head {
+    width: 100%;
+  }
+  html body .container-fluid .section10 .head span {
+    flex: 1;
+    margin: 0 10px;
+  }
+  html body .container-fluid .section10 .head img {
+    width: 10%;
+  }
+  html body .container-fluid .section10 .elementor10 {
+    width: 94%;
+  }
+  html body .container-fluid .section10 .elementor10 h1 {
+    font-size: 1em;
+    color: #fff;
+  }
+  html body .container-fluid .section10 .elementor10 p {
+    color: #a2b0a2;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks .address .social {
+    display: flex;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks form .inputbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: #fff;
+    width: 100%;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks form .inputbox button {
+    padding: 0.5em 0.5em;
+    background-color: #eeac00;
+    border-color: #eeac00;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks form .inputbox input {
+    border: none;
+    outline: none;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks a {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  html body .container-fluid .section10 .elementor10 .impLinks h1 {
+    display: flex;
+    align-items: center;
+  }
+}
+html body .container-fluid footer {
+  background-color: #00a850;
+  padding: 3em 0;
+}
+html body .container-fluid footer .foot {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.2em;
+}
+html body .container-fluid footer .foot .right {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+}
+html body .container-fluid footer .foot .right img {
+  width: 3em;
+}
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  html body .container-fluid footer {
+    background-color: #00a850;
+    padding: 3em 0 7em 0;
+  }
+  html body .container-fluid footer .foot {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.1em;
+    color: #fff;
+  }
+  html body .container-fluid footer .foot .left {
+    width: 50%;
+  }
+  html body .container-fluid footer .foot .right {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+  }
+  html body .container-fluid footer .foot .right img {
+    width: 3em;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid footer {
+    background-color: #00a850;
+    padding: 3em 0 7em 0;
+  }
+  html body .container-fluid footer .foot {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.1em;
+    color: #fff;
+  }
+  html body .container-fluid footer .foot .left {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  html body .container-fluid footer .foot .right {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+  }
+  html body .container-fluid footer .foot .right img {
+    width: 3em;
+  }
+}
+html body .container-fluid .bottom-menu {
+  display: none;
+}
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  html body .container-fluid .bottom-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    z-index: 1000;
+  }
+  html body .container-fluid .bottom-menu .menuist {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .bottom-menu .menuist .botmenu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  html body .container-fluid .bottom-menu .menuist .botmenu a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #181818;
+  }
+  html body .container-fluid .bottom-menu .menuist .botmenu p {
+    font-size: 1em;
+  }
+  html body .container-fluid .bottom-menu .menuist .sh {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(235, 235, 235);
+    padding: 0.5em 0;
+  }
+  html body .container-fluid .bottom-menu .menuist .account {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(235, 235, 235);
+    padding: 0.2em 0;
+  }
+  html body .container-fluid .bottom-menu .menuist .sarchBar {
+    padding: 0.2em 0;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    flex-direction: column;
+    border: 2px solid rgb(235, 235, 235);
+  }
+  html body .container-fluid .bottom-menu .menuist .wishlist {
+    padding: 0.5em 0;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    flex-direction: column;
+    border: 2px solid rgb(235, 235, 235);
+  }
+  html body .container-fluid .bottom-menu .menuist .cartfooter {
+    padding: 0.5em 0;
+    border: 2px solid rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    width: 30%;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 760px) {
+  html body .container-fluid .bottom-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    z-index: 999;
+  }
+  html body .container-fluid .bottom-menu .menuist {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container-fluid .bottom-menu .menuist .botmenu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  html body .container-fluid .bottom-menu .menuist .botmenu a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #181818;
+  }
+  html body .container-fluid .bottom-menu .menuist .botmenu p {
+    font-size: 0.8em;
+  }
+  html body .container-fluid .bottom-menu .menuist .sh {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(235, 235, 235);
+    padding: 0.2em 0;
+  }
+  html body .container-fluid .bottom-menu .menuist .sarchBar {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    flex-direction: column;
+    border: 2px solid rgb(235, 235, 235);
+  }
+  html body .container-fluid .bottom-menu .menuist .wishlist {
+    padding: 0.2em 0;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    flex-direction: column;
+    border: 2px solid rgb(235, 235, 235);
+  }
+  html body .container-fluid .bottom-menu .menuist .cartfooter {
+    padding: 0.2em 0;
+    border: 2px solid rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    width: 20%;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

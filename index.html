@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Health N Healthy</title>
+    <link rel="stylesheet" href="assest/css/style.css">
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css" />
+    <script src="assest/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="assest/css/cart.css">
+    <link rel="stylesheet" href="assest/css/animate.min.css">
+    <link rel="icon" type="image/x-icon" href="assest/media/logo.png">
+    <link rel="stylesheet" href="assest/css/spinloading.css">
+
+    <script src="assest/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+</head>
+<body>
+
+  <div class="loader-container">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+  
+    <div class="container-fluid">
+        <div class="heading-section row">
+            <header>
+                <div class="nav-content">
+                    <nav>
+                        <div class="logo"> <a href="index.html">
+                            <img src="assest/media/logo.png" alt="logo">
+                          </a>
+                        </div>
+                        <ul>
+                            <li class="dropdown">MENU <box-icon name='chevron-down'></box-icon></i> <ul><li><a href="our-menu.html">MENU CAFE</a></li></ul></li>
+                            <li class="dropdown">SHOP <box-icon name='chevron-down'></box-icon> <ul><li>BAKERY</li>
+                                <li>WHOLE GRAIN VEGAN</li>
+                                <li>WHOLE GRAIN NON-VEGAN</li>
+                                <li>WHOLE GRAIN GLUTEN FREE</li>
+                                <li>KETO</li>
+                                <li>GROCERY</li>
+                                <li>EBOOKS</li>
+                                <li>FITNESS ACCESSORIES</li>
+                            </ul></li>
+                            <li>BLOG</li>
+                            <li class="dropdown">ABOUT US <box-icon name='chevron-down'></box-icon> <ul><li>OUR FOUNDER</li><li>ACCOLADES</li><li>OUR STORY</li><li>OUR BRAND STORY</li><li>WHO WE ARE</li><li>NUTRITION MEDIA</li><li>HEALTH + SAFETY</li></ul></li>
+                            <li class="dropdown">CONTACT <box-icon name='chevron-down'></box-icon> <ul><li>MEAL PREP</li><li>CHILD NUTRITION</li>
+                            <li>CORPORATE WELLNESS</li><li>SCHOOL NUTRITION</li><li>GREEN SMOOTHIE PACK</li><li>HEALTHY GROCERY SHOPPER</li></ul></li>
+                        </ul>
+                    </nav>
+
+                    <div class="right">
+
+                        <div class="contact-details">
+
+                            <span><i class="fa-solid fa-motorcycle" style="color: #00a149;"></i></span>
+                            <div class="text">
+                            <p>Call and Order in</p>
+                            <p style="color: #00a149;">+2348089726031</p>
+                            </div>
+                        </div>
+
+                        <div class="icons">
+
+                          <div style="background-color: #fff;" class="searcIcon" onclick="searchBox()">
+                        <span class="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                      </div>
+                        <div class="user" onclick="userLogin()" style="background-color: #fff !important;"> <span class="user"><i class="fa-solid fa-user"></i></span></div>
+                       
+                        <div class="login">
+                          <div class="loginDetails">
+                            <form action="" id="formDetails">
+                              <h2>Sign in <a href="signup.html">Create an Account</a></h2>
+                              <br>
+                              <div class="error-text">ERROR</div><br>
+                              <div class="inputBox2">
+
+                                <label>Username or email</label>
+                                <br>
+                                <input type="text" placeholder="Username" name="username" required>
+                              </div>
+                              <br><br>
+
+
+                              <div class="inputBox2">
+
+                                <label for="">Password</label>
+                                <br>
+                                <input type="text" placeholder="Password" name="password" required>
+                              </div>
+                              <br>
+                              <button>Login</button>
+                              <br>
+                              <br><br>
+                              <a href=""> forgot password?</a>
+
+                              
+
+                            </form>
+                          </div>
+                        </div>
+                        <span class="heart"><i class="fa-solid fa-heart"></i></span>
+                        <div class="count2"><a href="index.html">0</a></div>
+                        
+
+                        <div>
+                    <div class="opencart" onclick="openCart()" style="background-color: #fff !important;">
+                      <span  class="cart"><i class="fa-solid fa-cart-shopping"></i> </span>
+                      <div class="count">0</div>
+                      
+                    </div>
+                       
+                        
+
+                        <div  class="Shopping-cart">
+                          <div class="shop">
+                            <div class="detailsCart">
+                              <h1>SHOPPING CART</h1>
+                              <div class="close"  style="background-color: #fff !important;" onclick="closeCart()">
+                                <p  style="color: #000 !important;">CLOSE X</p>
+
+                              </div>
+                              
+                            </div>
+                            <hr>
+
+                            <div class="items">
+                              <strong style=" background-color: #fff  !important;"><box-icon  style="background-color: #fff !important;" name='x-circle' color='#b16464' ></box-icon></strong>
+                              <img src="assest/media/DATE-SYRUP.png" alt="">
+                              <div class="item-details" style="background-color: #fff  !important;;">
+                                <h3 style=" background-color: #fff  !important;">DATE SYRUP</h3>
+                                <P>1 x ₦3,000.00</P>
+                              </div>
+                            </div>
+                            <hr>
+
+
+
+
+
+
+
+                            <div class="subtotal" style=" background-color: #fff  !important;">
+                              <hr>
+                             <div class="sub"><h1>SUBTOTAL</h1>
+                              <p>₦3,000.00</p>
+
+                            </div> 
+                          
+
+                            <br>
+
+                            <button style=" border-color: #00A149;">CHECKOUT</button>
+                            <br>
+                            <br>
+                            <button style=" background-color: #fff  !important;">VIEW CART</button>
+
+                          </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="searchBar">
+              <form action="backend/search.php">
+
+                <div class="inputBox1">
+
+                  <input type="search" placeholder="Search Products">
+
+                  <div class="closeSearch" onclick="closeSearchBox()">
+
+                    <span><img src="assest/media/x-regular-72.png" alt=""></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+
+        <div class="head-mobile-view row">
+          <header>
+            
+            <div class="navBar">
+              <div id="menu" class = "barmenu" onclick = "showActive()">
+                <div class = "bar01"></div>
+                <div class = "bar02"></div>
+                <div class = "bar03"></div>
+                </div>
+
+                <div class="logo"><a href="index.html"><img src="assest/media/logo.png" alt=""></a></div>
+
+                <div class="call"><a href="tel: +2348089726031"><span><box-icon name='phone-call' type='solid' rotate='270' ></box-icon></span></a></div>
+            </div>
+          </header>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section1">
+            <div class="elementor">
+                <div class="widget">
+                    <div class="left">
+           
+                        <h2>BEST VEGAN CAFE IN ABUJA</h2>
+                        <h2 style="color: #00A149;">SAUSAGE ROLL</h2>
+                        <h6 style="color: #00A149;">Deliciously unbelievable</h6>
+                        <p>You just have to try it!</p>
+                        <br><br>
+
+                        <div class="order" >
+                        <button>ORDER NOW</button>
+                        <p style="color: #00A149;">₦5000</p>
+
+                    </div>
+                    </div>
+                    <div class="right">
+                        <div class="paper">
+                        <div class="peper1">
+                            <img src="assest/media/pepper.png" alt="">
+                        </div>
+                        <div class="peper2"><img src="assest/media/pepper.png" alt=""></div>
+                    </div>
+                        <div class="shallot animate_animated animate__heartBeat ">
+                            <img  src="assest/media/shallot.png" alt="">
+                        </div>
+                        
+                        <div class="burger ">
+                            <img class="animate_animated  animate__heartBeat animate__delay-5s animate__slower	3s" id="rotatingImage"  src="assest/media/burger.png" alt="">
+                        </div>
+                        <div class="basil">
+                            <img class="animate_animated animate__heartBeat  animate__delay-5s animate__slower	3s" src="assest/media/h2_basil - Copy.png">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section2">
+            <div class="elementor2">
+                <div class="widget2">
+                    <div class="left">
+                        <img src="assest/media/vegan-chickpea-salad-sandwich.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h3>About Our Food</h3>
+                        <h2>Healthy Meals From Abuja with Nigerian Love</h2>
+                        <p>We took things to the next level and created vegan versions of healthy whole grain meals that keeps you filling full while nourishing your body. You don’t have to settle for bland taste and limited options. Better vegan options for sandwiches, bread, cookies, cake, and more.</p>
+                        <h1>These chickpea sandwich is everything Sweet & Spicy.Healthier.
+                          <br> Delicious.</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section3">
+            <div class="elementor3">
+                <div class="widget3">
+                <div class="elementor-text row">
+                    <h2>Choose what you want, select a pick up time</h2>
+                    <br>
+                   <p> We are very busy all days, so we advice you to call on us and confirm
+                    your order before arriving, so we can gurantee your order is ready. Healthy Vegan, Keto, Gluten-free Meals in Abuja
+                   </p>
+                   <br><br><br><br>
+                   <button>Order Now</button>
+
+
+                </div>
+
+                <div class="rider"> <img id="ride" src="assest/media/h2_shipper.png" alt=""></div>
+                <div class="elementor-text-2">
+                    <h2><span><img src="assest/media/vegan.png" alt=""></span> Earn points every time you order online</h2>
+                    <br>
+                    <p>You can now earn points when you order online.  Don't </p>
+
+                    <p> miss out on this, get your orders coming.</p>
+                    <br>
+                    <p>Healthy meal in Abuja</p>
+                    <br>
+                    <p>Nice Bakery in Abuja</p>
+
+                    <br>
+                    <button>ORDER NOW</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="section4">
+            <div class="slider-wrapper">
+                <div class="control">
+                    <div><button onclick="prevSlide()"><box-icon type='solid' name='chevron-left-circle'></box-icon></button></div>
+                    <div><button onclick="nextSlide()"><box-icon name='chevron-right-circle' type='solid' ></box-icon></button></div>
+               
+               
+            </div>
+            <div class="head-text">
+                <div><h2>Popular Goodies</h2></div>
+                <div><a href="">See all <box-icon name='chevron-right-square' type='solid' color='#00a149' ></box-icon></a></div>
+            </div>
+        
+                <div class="image-list ">
+                    <div class="card1">
+                  <img
+                    class="image-item "
+                    src="assest/media/aaa-3.png"
+                    alt=""
+                  />
+
+                  <div class="details">
+                    <h2>ERYTHRITOL</h2>
+                    <br>
+                    <p>Erythritol might have some health benefits including: 1kg managing blood.</p>
+
+                    <div class="price">
+                        <h1>&#8358;10,000.00</h1>
+
+                        <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                    </div>
+
+                  </div>
+                </div>
+
+
+                <div class="card2">
+                    <img
+                      class="image-item"
+                      src="assest/media/cupcake.png"
+                      alt=""
+                    />
+                    <div class="details">
+                        <h2>WHOLE GRAIN VEGAN CUPCAKE</h2>
+                        <br>
+                        <p>Healthy Muffin to meet your dietary needs 6 MUFFINS</p>
+
+                        <div class="price">
+                            <h1>&#8358; 9,000</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                    
+                    </div>
+                  </div>
+
+                  <div class="card3">
+                    <img
+                      class="image-item"
+                      src="assest/media/Coconut-Oatmeal-Cookies.png"
+                      alt=""
+                    />
+
+                    <div class="details">
+                        <h2>COCONUT OAT COOKIE</h2>
+                            <br>
+                            <p>These cookies are full of bits of health bar, Ingredients-Rolled oat, oat flour</p>
+    
+                            <div class="price">
+                                <h1>&#8358;3,000.00</h1>
+    
+                                <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+    
+    
+                            </div>
+                      </div>
+                  </div>
+
+
+                  <div class="card4">
+                    <img
+                      class="image-item"
+                      src="assest/media/DATE-SYRUP.png"
+                      alt=""
+                    />
+                    <div class="details">
+                        <h2>DATE SYRUP</h2>
+                        <br>
+                        <p>Contains dates, water, pure cacao powder 250ml DATE SYRUP.</p>
+
+                        <div class="price">
+                            <h1>&#8358;3,000.00</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                  </div>
+                  </div>
+
+                  <div class="card5">
+                    <img
+                      class="image-item"
+                      src="assest/media/gluten-free-bread.png"
+                      alt=""
+                    />
+                    <div class="details">
+                        <h2>WHOLE GRAIN GLUTEN FREE BANANA BREAD</h2>
+                        <br>
+                        <p>Ingredients- rice flour, tapioca starcb, potato starch, buckwheat flour.</p>
+
+                        <div class="price">
+                            <h1>&#8358;6,000.00 -  &#8358;7,000.00</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                    
+                    </div>
+                  </div>
+                  <div class="card6">
+                    <img
+                      class="image-item"
+                      src="assest/media/gluten-free-cookies.png"
+                      alt=""
+                    />
+                    <div class="details">
+                        <h2>GLUTEN -FREE CHOCOLATE CHIP COOKIES</h2>
+                            <br>
+                            <p>Gluten free contains - rice flour, tapioca starch, potato starch, buckwheat flour</p>
+    
+                            <div class="price">
+                                <h1>&#8358;2,500.00</h1>
+    
+                                <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+    
+    
+                            </div>
+                      </div>
+                  </div>
+
+
+                  <div class="card7">
+                    <img
+                      class="image-item"
+                      src="assest/media/Keto-Almond-Flour-Bread.png"
+                      alt=""
+                    />
+
+                    <div class="details">
+                        <h2>ALMOND FLAX BREAD</h2>
+                            <br>
+                            <p>Ingredients: Organic almond flour, coconut flour, psyllium husk, coconut oil</p>
+    
+                            <div class="price">
+                                <h1>&#8358;7,000.00</h1>
+    
+                                <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+    
+    
+                            </div>
+                      </div>
+                  </div>
+
+                  <div class="card8">
+                    <img
+                      class="image-item"
+                      src="assest/media/ketosandwich.png"
+                      alt=""
+                    />
+                    <div class="details">
+                        <h2>KETO CHICKEN SANDWICH</h2>
+                        <br>
+                        <p>Almond coconut bread, shredded chicken and vegetable</p>
+
+                        <div class="price">
+                            <h1>&#8358;3,000.00</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                  </div>
+                  </div>
+
+
+                  <div class="card9">
+                    <img
+                      class="image-item"
+                      src="assest/media/meatpie.png"
+                      alt=""
+                    />
+
+                    <div class="details">
+                    <h2>WHOLE GRAIN VEGAN MEAT PIE</h2>
+                        <br>
+                        <p>Contains -  oat flour, whole wheat flour, pumpkin see, flax seed, seed butter.</p>
+
+                        <div class="price">
+                            <h1>&#8358;7,000.00</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                  </div>
+                  </div>
+
+
+                  <div class="card10">
+                    <img
+                      class="image-item"
+                      src="assest/media/peanutbutter.png"
+                      alt=""
+                    />
+                    <div class="details">
+                        <h2>GLUTEN-FREE PEANUT BUTTER COOKIE</h2>
+                        <br>
+                        <p>Gluten free contains - rice, tapioca starch, potato starch, buckwheat flour</p>
+
+                        <div class="price">
+                            <h1>&#8358;2,000.00</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                  </div>
+                  </div>
+
+
+                  <div class="card11">
+                    <img
+                      class="image-item"
+                      src="assest/media/vegan-banana-bread.png"
+                      alt=""
+                    />
+                    <div class="details">
+                        <h2>WHOLE GRAIN CHOCOLATE CHIP BANANA BREAD</h2>
+                        <br>
+                        <p>Ingredients- oat flour, whole wheat flour, pumpkin seed, flax seed.</p>
+
+                        <div class="price">
+                            <h1>&#8358;7,000.00</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                  </div>
+                  </div>
+
+
+                  <div class="card12">
+                    <img
+                      class="image-item"
+                      src="assest/media/slimnodes.png"
+                      alt=""
+                    />
+
+                    <div class="details">
+                        <h2>SLIM NOODLES</h2>
+                        <br>
+                        <p>Directions: 1). Drain away water 2). Rinse 2-3 times under cold water</p>
+
+                        <div class="price">
+                            <h1>&#8358;3,500.00</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                  </div>
+
+                    
+                  </div>
+
+                  <div class="card13">
+                    <img
+                      class="image-item"
+                      src="assest/media/vegan-mac-and-cheese.png"
+                      alt=""
+                    />
+                    <div class="details">
+                        <h2>VEGAN MAC & CHEESE</h2>
+                        <br>
+                        <p>Vegan mac & cheese with wheat pasta and mushroom and vegetable.</p>
+
+                        <div class="price">
+                            <h1>&#8358;6,000.00 -  &#8358;7,000.00</h1>
+
+                            <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+
+                        </div>
+                  </div>
+                  </div>
+
+            
+
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="section5">
+                <div class="textimonial">
+                    <div class="ourtextimonial">
+                      <h2>WHAT PEOPLE SAY ABOUT US!</h2>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div
+                            class="carousel slide"
+                            data-ride="carousel"
+                            id="quote-carousel"
+                          >
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner text-center">
+                              <!-- Quote 1 -->
+                              <div class="item active">
+                                <blockquote>
+                                  <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                      <p>
+                                       I never regretted buying food from this place, I'm glad at your service and your delivery methods
+                                      </p>
+                                      <small>Someone famous</small>
+                                    </div>
+                                  </div>
+                                </blockquote>
+                              </div>
+                              <!-- Quote 2 -->
+                              <div class="item">
+                                <blockquote>
+                                  <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                      <p>
+                                       This is one of the most yummy food i have ever eaten
+                                      </p>
+                                      <small>Someone famous</small>
+                                    </div>
+                                  </div>
+                                </blockquote>
+                              </div>
+                              <!-- Quote 3 -->
+                              <div class="item">
+                                <blockquote>
+                                  <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                      <p>
+                                      Is all about the taste, the taste of food makes a big difference
+                                      </p>
+                                      <small>Someone famous</small>
+                                    </div>
+                                  </div>
+                                </blockquote>
+                              </div>
+                            </div>
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                              <li
+                                data-target="#quote-carousel"
+                                data-slide-to="0"
+                                class="active"
+                              >
+                                <img
+                                  class="img-responsive"
+                                  src="assest/media/nicehair1.png"
+                                  alt=""
+                                />
+                              </li>
+                              <li data-target="#quote-carousel" data-slide-to="1">
+                                <img
+                                  class="img-responsive"
+                                  src="assest/media/nicehair2.png"
+                                  alt=""
+                                />
+                              </li>
+                              <li data-target="#quote-carousel" data-slide-to="2">
+                                <img
+                                  class="img-responsive"
+                                  src="assest/media/nicehair3.png"
+                                  alt=""
+                                />
+                              </li>
+                            </ol>
+            
+                            <!-- Carousel Buttons Next/Prev -->
+                            <a
+                              data-slide="prev"
+                              href="#quote-carousel"
+                              class="left carousel-control"
+                              ><i class="fa fa-chevron-left"></i
+                            ></a>
+                            <a
+                              data-slide="next"
+                              href="#quote-carousel"
+                              class="right carousel-control"
+                              ><i class="fa fa-chevron-right"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="section6">
+                <div class="gridsection">
+                    <div class="grid1"  onmouseover="displayBlock('mouseover1')">
+                        <h2 style="color: #fff;">Fast Food</h2>
+                        <h1 style="color: #FFCD02;">Meals</h1>
+                        <br>
+
+                        
+                        <h3 style="color: #F9FDFB; z-index: 100; position: absolute;">NEW PHENOMENON <br>VEGAN TASTE</h3>
+                        
+                        <br><br><br><br><br>
+                        <h3>₦2500</h3>
+                        <br>
+                        <button>ORDER NOW</button>
+                        <div class="sandwich"> <img src="assest/media/vegan-chickpea-salad-sandwich.png" alt=""></div>
+                        <div  class="mousover mousover1"><img src="assest/media/h1_shape-8.png" alt=""></div>
+                    </div>
+                   
+                    
+
+                    <div class="grid2"  onmouseover="displayBlock('mouseover2')">
+                        <h2 style="color: #fff;">House</h2>
+                        <h1 style="color: #FFCD02;">Wraps</h1>
+                        <br>
+
+                        
+                        <h3 style="color: #F9FDFB; z-index: 100; position: absolute;">MOUTH WATERING HOT MEALS YOU CAN'T RESIST</h3>
+                        
+                        <br><br><br>
+                        <h3>₦4500</h3>
+                        <br><br><br><br><br>
+                        <button>ORDER NOW</button>
+                        <div class="sandwich" style="z-index: 1;"> <img src="assest/media/wrap.png" alt=""></div>
+                        <div  class="mousover mousover2"><img src="assest/media/h1_shape-8.png" alt=""></div>
+                    </div>
+                   
+
+
+
+
+                    <div class="grid3"  onmouseover="displayBlock('mouseover3')">
+                        <h2 style="color: #fff;">Hot Fresh</h2>
+                        <h1 style="color: #CD4414;">Salad</h1>
+                        <br>
+
+                        
+                        <h3 style="color: #F9FDFB;">NEW PHENOMENON </h3>
+                        <h3 style="color: #F9FDFB;">DELICIOUS SALADS</h3>
+                        
+                        <br>
+                        <h3>₦4500</h3>
+                        <br>
+                        <button>ORDER NOW</button>
+                        <div class="sandwich"> <img src="assest/media/h1_shape-4.png" alt=""></div>
+                        <div  class="mousover mousover3"><img src="assest/media/h1_shape-8.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section7">
+                <div class="elementor7">
+                    <div class="head-text">
+                        <div><h2>Top Meals</h2></div>
+                        <div><a href="">See all <box-icon name='chevron-right-square' type='solid' color='#00a149' ></box-icon></a></div>
+                    </div>
+                
+                        <div class="image-list ">
+                            <div class="card1">
+                          <img
+                            class="image-item "
+                            src="assest/media/watermelon-juice-abuja.png"
+                            alt=""
+                          />
+        
+                          <div class="details">
+                            <h2>ERYTHRITOL</h2>
+                            <br>
+                            <p>Erythritol might have some health benefits including: 1kg managing blood.</p>
+        
+                            <div class="price">
+                                <h1>&#8358;10,000.00</h1>
+        
+                                <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+        
+        
+                            </div>
+        
+                          </div>
+                        </div>
+        
+        
+                        <div class="card2">
+                            <img
+                              class="image-item"
+                              src="assest/media/cupcake.png"
+                              alt=""
+                            />
+                            <div class="details">
+                                <h2>WHOLE GRAIN VEGAN CUPCAKE</h2>
+                                <br>
+                                <p>Healthy Muffin to meet your dietary needs 6 MUFFINS</p>
+        
+                                <div class="price">
+                                    <h1>&#8358; 9,000</h1>
+        
+                                    <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+        
+        
+                                </div>
+                            
+                            </div>
+                          </div>
+        
+                          <div class="card3">
+                            <img
+                              class="image-item"
+                              src="assest/media/virgin-coconut-oil-abuja.png"
+                              alt=""
+                            />
+        
+                            <div class="details">
+                                <h2>COCONUT OAT COOKIE</h2>
+                                    <br>
+                                    <p>These cookies are full of bits of health bar, Ingredients-Rolled oat, oat flour</p>
+            
+                                    <div class="price">
+                                        <h1>&#8358;3,000.00</h1>
+            
+                                        <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+            
+            
+                                    </div>
+                              </div>
+                          </div>
+        
+        
+                          <div class="card4">
+                            <img
+                              class="image-item"
+                              src="assest/media/DATE-SYRUP.png"
+                              alt=""
+                            />
+                            <div class="details">
+                                <h2>DATE SYRUP</h2>
+                                <br>
+                                <p>Contains dates, water, pure cacao powder 250ml DATE SYRUP.</p>
+        
+                                <div class="price">
+                                    <h1>&#8358;3,000.00</h1>
+        
+                                    <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+        
+        
+                                </div>
+                          </div>
+                          </div>
+        
+                          <div class="card5">
+                            <img
+                              class="image-item"
+                              src="assest/media/Veg.png"
+                              alt=""
+                            />
+                            <div class="details">
+                                <h2>WHOLE GRAIN GLUTEN FREE BANANA BREAD</h2>
+                                <br>
+                                <p>Ingredients- rice flour, tapioca starcb, potato starch, buckwheat flour.</p>
+        
+                                <div class="price">
+                                    <h1>&#8358;6,000.00 -  &#8358;7,000.00</h1>
+        
+                                    <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+        
+        
+                                </div>
+                            
+                            </div>
+                          </div>
+                          <div class="card6">
+                            <img
+                              class="image-item"
+                              src="assest/media/gluten-free-cookies.png"
+                              alt=""
+                            />
+                            <div class="details">
+                                <h2>GLUTEN -FREE CHOCOLATE CHIP COOKIES</h2>
+                                    <br>
+                                    <p>Gluten free contains - rice flour, tapioca starch, potato starch, buckwheat flour</p>
+            
+                                    <div class="price">
+                                        <h1>&#8358;2,500.00</h1>
+            
+                                        <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+            
+            
+                                    </div>
+                              </div>
+                          </div>
+        
+        
+                          <div class="card7">
+                            <img
+                              class="image-item"
+                              src="assest/media/Keto-Almond-Flour-Bread.png"
+                              alt=""
+                            />
+        
+                            <div class="details">
+                                <h2>ALMOND FLAX BREAD</h2>
+                                    <br>
+                                    <p>Ingredients: Organic almond flour, coconut flour, psyllium husk, coconut oil</p>
+            
+                                    <div class="price">
+                                        <h1>&#8358;7,000.00</h1>
+            
+                                        <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+            
+            
+                                    </div>
+                              </div>
+                          </div>
+        
+                          <div class="card8">
+                            <img
+                              class="image-item"
+                              src="assest/media/ketosandwich.png"
+                              alt=""
+                            />
+                            <div class="details">
+                                <h2>KETO CHICKEN SANDWICH</h2>
+                                <br>
+                                <p>Almond coconut bread, shredded chicken and vegetable</p>
+        
+                                <div class="price">
+                                    <h1>&#8358;3,000.00</h1>
+        
+                                    <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+        
+        
+                                </div>
+                          </div>
+                          </div>
+        
+        
+                        
+        
+        
+                       
+        
+                    
+        
+        
+        
+                        </div>
+                </div>
+                
+            </div>
+
+            <div class="section8">
+                <div class="elementor8">
+                    <div class="pizza animate_animated animate__heartBeat  animate__delay-5s animate__slower	3s">
+                        <img src="assest/media/pizza.png" alt="">
+                    </div>
+
+                    <div class="percent">
+                        <img src="assest/media/h2-50.png" alt="">
+                    </div>
+
+                    <div class="text">
+                      <div class="text1">
+                        <h1>Super</h1>
+                        <h2>Delicious</h2>
+
+                        <h3>MEAL</h3>
+
+                        <p>Feel Hunger! Order Your Favourite Food</p>
+                      </div>
+
+                        <div class="pizza-hot">
+                            <img src="assest/media/pizza.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section9 row">
+              <div class="elementor9">
+
+                <form action="">
+                  <h1>Join For Hot Offers</h1>
+                  <div class="inputbox">
+                    <input type="search" placeholder="Enter email">
+                    <button>SUBSCRIBE</button>
+                  </div>
+                  <br>
+                  <p>I have read and agree to the Privacy Policy</p>
+                </form>
+              </div>
+            </div>
+
+            <div class="section10 row">
+              
+              <div class="head">
+                <span><hr></span>
+                <img src="assest/media/logo.png" alt="">
+                <span><hr></span>
+              </div>
+              
+              <div class="elementor10">
+                <br>
+                <div class="impLinks">
+                  <div class="address">
+                    <h1>ADDRESS</h1>
+                    <br>
+                    <p>Plot 72,</p>
+                    <p>1st Avenue by Bunny B Shops, Gwarinpa,</p>
+                    <p>Abuja Nigeria</p>
+
+                    <br>
+
+                    <div class="social">
+                      <span><box-icon name='facebook-circle' type='logo' color='#0000ff' ></box-icon></span>
+                      <span><box-icon name='twitter' type='logo' color='#1da1f2' ></box-icon></span>
+                      <span><box-icon name='instagram' type='logo' color='#5a6064' ></box-icon></span>
+                      <span><box-icon name='youtube' type='logo' color='#f72811' ></box-icon></span>
+                    </div>
+                  </div><br>
+                  <div class="Table">
+                    <h1>BOOK A TABLE</h1>
+                    
+                    <p>Have a question? This is the place to do it !</p>
+                    
+                    <a href=""> +2348089726031</a>
+                  </div><br>
+                  <div class="Opening">
+                    <h1>OPENING HOURS</h1>
+                    <p>Monday - Friday: 10am - 6pm</p>
+                    <a href=""> info@healthnhealthy.com</a>
+                  </div><br>
+                  <div class="news">
+                    <h1>NEWSLETTER</h1>
+                   
+                    <p>Subscribe to the weekly newsletter for all the latest updates</p>
+                    <br>
+                    <form action="">
+                      <div class="inputbox">
+                        <input type="search" placeholder="Your Email">
+                        <button>Subscribe</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer class="row">
+              <div class="foot">
+                <div class="left">
+                  <p>Copyright © 2021  <a href="">Health n Healthy</a>. All Rights Reserved. Developed by CodingMadeEasy</p>
+                </div>
+                <div class="right">
+                  <span><img src="assest/media/visacard.png" alt=""></span>
+                  <span><img src="assest/media/mastercard.png" alt=""></span>
+                  <span><img src="assest/media/verve.png" alt=""></span>
+                  <span><img src="assest/media/paypal.png" alt=""></span>
+                </div>
+              </div>
+            </footer>
+
+            <div class="bottom-menu row">
+              <div class="menuist">
+                <nav class="botmenu">
+                  <div class="sh">
+                    <a href="our-menu.html" style="text-decoration: none;">
+                    <span><box-icon name='store' type='solid' ></box-icon></span>
+                   <p>Shop</p></a>
+                  </div>
+
+
+                  <div class="account" style="display: flex; flex-direction: column; align-items: center; width: 20%; ">
+                    <a href="signup.html">
+                    <span style="padding-left: 25%;"><box-icon type='solid' name='user'></box-icon></span>
+                    <p>My Account</p>
+                  </a>
+                  </div>
+                  <div class="sarchBar">
+                  <span><box-icon name='search' ></box-icon></span>
+                  <p>Search</p>
+                  </div>
+                  <div class="wishlist">
+                    <a href="#">
+                    <span><box-icon name='heart' type='solid' ></box-icon></span>
+                    <p>Wishlist</p></a>
+                  </div>
+                  <div class="cartfooter">
+                  <a href="cart.html" style="text-decoration: none;">
+                    <span><box-icon name='cart-alt' type='solid' ></box-icon></span>
+
+                    <p>Cart</p></a>
+                  </div>
+                  
+                </nav>
+              </div>
+    
+            </div>
+    
+      
+
+      
+    </div>
+
+    <script src="assest/js/script.js"> </script>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.querySelector('.loader-container').style.display = 'none';
+    }, 5000);
+});
+  </script>
+    
+</body>
+</html>

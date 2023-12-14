@@ -1,0 +1,207 @@
+.Shopping-cart{
+    display: none;
+    width: 85%;
+    height: 100vh;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1000;
+    left: 28%;
+    top: -20%;
+    transform: transition 1s ease-in-out;
+
+}
+
+.ShoppingChange{
+    position: absolute;
+    right: -100%;
+}
+
+.Shopping-cart:hover{
+    background-color: #fff  !important;
+}
+
+.shop{
+    width: 90%;
+    margin-right: auto;
+    padding-left: 2%;
+    background-color: #fff  !important;
+    position: relative;
+   
+}
+
+.shop:hover{
+    background-color: #fff  !important;
+}
+
+.shop img{
+    width: 10em;
+}
+.shop h1{
+    font-size: 1.5em;
+    background-color: #fff  !important;
+}
+.shop p{
+    background-color: #fff  !important;
+}
+
+.detailsCart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.detailsCart:hover{
+    background-color: #fff  !important;
+}
+
+.items{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff  !important;
+}
+
+.items h3{
+    font-size: 1em !important;
+    font-weight: 700;
+
+}
+
+.subtotal{
+    position: absolute;
+    width: 100%;
+    bottom: -260%;
+   
+}
+
+.subtotal .sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff !important;
+
+}
+.subtotal button{
+    width: 100%;
+    padding: .7em 0;
+    background-color: #00A149;
+    border-radius: 10px;
+    font-weight: 700;
+   
+}
+
+
+.login{
+    display: none;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #fff !important;
+    border-color: #00A149 !important;
+    border-top: 3px solid;
+    transform: transition 1s ease-out;
+    
+}
+
+.closeLogin{
+    display: block;
+}
+
+.login:hover{
+    background-color: #fff !important;
+    border-color: #00A149;
+    border-top: 3px solid #00A149 !important;
+}
+.login .loginDetails{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff !important;
+}
+.login .loginDetails{
+    background-color: #fff !important;
+}
+
+#formDetails{
+    padding: 1em;
+    background-color: #fff !important;
+    color: #808080;
+}
+
+#formDetails h2{
+    font-size: 1.2em;
+}
+
+#formDetails h2:hover{
+    background-color: #fff !important;
+    font-size: 1.2em;
+}
+
+#formDetails .inputBox2{
+    background-color: #fff !important;
+}
+
+#formDetails .inputBox2:hover{
+    background-color: #fff !important;
+}
+
+#formDetails input{
+    width: 100%;
+    border:  .1px solid #E5E5E5;
+    border-radius: 10px;
+    padding: 1em 0;
+    outline-color: #00A149;
+    color: #808080;
+}
+
+
+.error-text{
+    display: none;
+    width: 100%;
+    padding: 1em 0;
+    background-color: #DB731E;
+    text-align: center;
+    color: #fff;
+}
+
+#formDetails input:hover{
+    background-color: #fff !important;
+}
+#formDetails a{
+    color: #00A149;
+}
+
+#formDetails a:hover{
+    background-color: #fff !important;
+}
+
+#formDetails:hover{
+    background-color: #fff !important;
+    
+}
+
+#formDetails button{
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 10px;
+    background-color: #EEAC00;
+    border-color: #EEAC00;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#formDetails input::placeholder{
+    padding-left: 2%;
+   
+}
+
+#formDetails .inputBox2 label{
+    background-color: #fff !important;
+}
+

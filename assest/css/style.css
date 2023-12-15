@@ -538,12 +538,12 @@ html body .container-fluid .section1 .elementor .widget .right .paper {
     padding-top: 20em;
   }
   html body .container-fluid .section1 .elementor {
-    width: 90%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 12%;
+    top: 15%;
   }
   html body .container-fluid .section1 .elementor .widget {
     width: 100%;
@@ -836,40 +836,42 @@ html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .ou
   -moz-column-gap: 2em;
        column-gap: 2em;
 }
-html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList {
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foudLit {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto)) !important;
   gap: 2em;
   padding-top: 2em;
 }
-html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList h1 {
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foudLit h1 {
   font-size: 1em !important;
 }
-html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 {
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foudLit .food1 {
   display: flex;
   align-items: center;
   -moz-column-gap: 1em;
        column-gap: 1em;
-  height: 25vh;
-  width: 80%;
-  border: 2px solid #e5e5e5;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #e7e1e1;
   border-radius: 30px;
   background-color: #e5f5ec;
   padding: 0.5em;
 }
-html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 .priceTag {
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foudLit .food1 .priceTag {
   display: flex;
   width: 80%;
   align-items: center;
   justify-content: space-between;
 }
-html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList .food1 .priceTag .addCart {
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foudLit .food1 .priceTag .addCart {
   background-color: #00a149;
   cursor: pointer;
   padding: 10px;
   border-radius: 10px;
 }
-html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foodList img {
+html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .foudLit img {
   width: 100%;
 }
 html body .container-fluid .section01 .restaurant-menu .menu .menuFood .list .vegMeal {
@@ -1195,14 +1197,14 @@ html body .container-fluid .section01 .restaurant-menu .menu h1 {
   }
 }
 html body .container-fluid .section2 {
-  width: 90%;
+  width: 100%;
   background-color: #fff;
   margin-top: 15em;
   padding-bottom: 3em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html body .container-fluid .section2 .elementor2 {
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1235,7 +1237,7 @@ html body .container-fluid .section2 .elementor2 .widget2 .right button {
   margin-top: 1em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-@media screen and (min-width: 760px) and (max-width: 1300px) {
+@media screen and (min-width: 780px) and (max-width: 1450px) {
   html body .container-fluid .section2 {
     width: 100%;
     background-color: #fff;
@@ -1544,21 +1546,18 @@ html body .container-fluid .section3 .elementor3 .widget3 .elementor-text-2 butt
 html body .container-fluid .section4 {
   width: 100%;
   margin: 0;
-  padding: 8em 0;
 }
 html body .container-fluid .section4 .slider-wrapper {
-  width: 67%;
+  width: 93%;
   margin-right: auto;
   margin-left: auto;
   position: relative;
   overflow: hidden;
-  padding: 0 0.1em;
 }
 html body .container-fluid .section4 .slider-wrapper .head-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 2em;
 }
 html body .container-fluid .section4 .slider-wrapper .head-text h2 {
   font-size: 3em;
@@ -1572,7 +1571,7 @@ html body .container-fluid .section4 .slider-wrapper .head-text a {
   font-size: 1em;
 }
 html body .container-fluid .section4 .slider-wrapper .control {
-  width: 98%;
+  width: 100%;
   top: 50%;
   right: 0%;
   position: absolute;
@@ -1585,159 +1584,157 @@ html body .container-fluid .section4 .slider-wrapper .image-list {
   display: flex;
   -moz-column-gap: 1.6em;
        column-gap: 1.6em;
-  align-items: center;
   transition: transform 0.5s ease;
-  padding: 0 2%;
   margin-left: auto;
   margin-right: auto;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 {
-  width: 50%;
-  height: 50vh;
+html body .container-fluid .section4 .slider-wrapper .image-list .car1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 {
+  width: 35%;
   border-radius: 30px;
+  padding: 2em;
   border: 4px solid #e5e5e5;
   background-color: #e5e5e5;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details {
+html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details {
   padding: 0 1em;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h2,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h2 {
+html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details h2,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details h2 {
   font-size: 1em;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h1,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h1 {
+html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details h1,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details h1 {
   font-size: 1em;
   color: red;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details p,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details p {
+html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details p,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details p {
   color: #979797;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price {
+html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details .price,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details .price {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price span,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price span {
+html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details .price span,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details .price span {
   display: flex;
   align-items: center;
   background-color: #00a149;
   border-radius: 10px;
   padding: 0.5em;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12 img,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 img {
+html body .container-fluid .section4 .slider-wrapper .image-list .car1 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12 img,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 img {
   transform: scale(0.6);
   background-color: #fbf7e8;
   height: 30vh;
   transition: transform 0.3s ease;
 }
-html body .container-fluid .section4 .slider-wrapper .image-list .card1 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card2 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card3 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card4 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card5 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card6 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card7 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card8 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card9 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card10 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card11 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card12 .scale,
-html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale {
+html body .container-fluid .section4 .slider-wrapper .image-list .car1 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car2 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car3 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car4 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car5 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car6 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car7 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car8 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car9 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car10 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car11 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car12 .scale,
+html body .container-fluid .section4 .slider-wrapper .image-list .car13 .scale {
   transform: scale(1);
   border-radius: 30px;
 }
@@ -1748,18 +1745,16 @@ html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale 
     padding: 8em 0;
   }
   html body .container-fluid .section4 .slider-wrapper {
-    width: 90%;
+    width: 93%;
     margin-right: auto;
     margin-left: auto;
     position: relative;
     overflow: hidden;
-    padding: 0 0.1em;
   }
   html body .container-fluid .section4 .slider-wrapper .head-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 2em;
   }
   html body .container-fluid .section4 .slider-wrapper .head-text h2 {
     font-size: 3em;
@@ -1773,7 +1768,7 @@ html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale 
     font-size: 1em;
   }
   html body .container-fluid .section4 .slider-wrapper .control {
-    width: 98%;
+    width: 100%;
     top: 50%;
     right: 0%;
     position: absolute;
@@ -1786,169 +1781,165 @@ html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale 
     display: flex;
     -moz-column-gap: 1.6em;
          column-gap: 1.6em;
-    align-items: center;
     transition: transform 0.5s ease;
-    padding: 0 2%;
     margin-left: auto;
     margin-right: auto;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 {
-    width: 39%;
-    height: 42vh;
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 {
+    width: 100%;
     border-radius: 30px;
+    padding: 2em;
     border: 4px solid #e5e5e5;
-    background-color: #fff;
+    background-color: #e5e5e5;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details {
     padding: 0 1em;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h2 {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details h2 {
     font-size: 1em;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h1 {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details h1 {
     font-size: 1em;
     color: red;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details p {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details p {
     color: #979797;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details .price {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price span {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details .price span {
     display: flex;
     align-items: center;
     background-color: #00a149;
     border-radius: 10px;
     padding: 0.5em;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 img {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 img {
     transform: scale(0.6);
     background-color: #fbf7e8;
-    height: 21.5vh;
+    height: 30vh;
     transition: transform 0.3s ease;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .scale {
     transform: scale(1);
     border-radius: 30px;
   }
 }
 @media screen and (min-width: 180px) and (max-width: 760px) {
   html body .container-fluid .section4 {
-    display: none;
     width: 100%;
     margin: 0;
-    padding: 8em 0;
   }
   html body .container-fluid .section4 .slider-wrapper {
     width: 90%;
@@ -1956,16 +1947,14 @@ html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale 
     margin-left: auto;
     position: relative;
     overflow: hidden;
-    padding: 0 0.1em;
   }
   html body .container-fluid .section4 .slider-wrapper .head-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 2em;
   }
   html body .container-fluid .section4 .slider-wrapper .head-text h2 {
-    font-size: 2em;
+    font-size: 3em;
   }
   html body .container-fluid .section4 .slider-wrapper .head-text a {
     display: flex;
@@ -1976,7 +1965,7 @@ html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale 
     font-size: 1em;
   }
   html body .container-fluid .section4 .slider-wrapper .control {
-    width: 98%;
+    width: 100%;
     top: 50%;
     right: 0%;
     position: absolute;
@@ -1986,170 +1975,166 @@ html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale 
     z-index: 900;
   }
   html body .container-fluid .section4 .slider-wrapper .image-list {
-    width: 100%;
     display: flex;
     -moz-column-gap: 1.6em;
          column-gap: 1.6em;
-    align-items: center;
     transition: transform 0.5s ease;
-    padding: 0 2%;
     margin-left: auto;
     margin-right: auto;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 {
-    width: 500px;
-    height: 65vh;
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 {
+    width: 100%;
     border-radius: 30px;
+    padding: 2em;
     border: 4px solid #e5e5e5;
-    background-color: #fff;
+    background-color: #e5e5e5;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details {
     padding: 0 1em;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h2,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h2 {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details h2,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details h2 {
     font-size: 1em;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details h1,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details h1 {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details h1,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details h1 {
     font-size: 1em;
     color: red;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details p,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details p {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details p,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details p {
     color: #979797;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details .price,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details .price {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .details .price span,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .details .price span {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .details .price span,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .details .price span {
     display: flex;
     align-items: center;
     background-color: #00a149;
     border-radius: 10px;
     padding: 0.5em;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 img,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 img {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 img,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 img {
     transform: scale(0.6);
     background-color: #fbf7e8;
     height: 30vh;
-    width: 270px;
     transition: transform 0.3s ease;
   }
-  html body .container-fluid .section4 .slider-wrapper .image-list .card1 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card2 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card3 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card4 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card5 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card6 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card7 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card8 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card9 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card10 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card11 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card12 .scale,
-  html body .container-fluid .section4 .slider-wrapper .image-list .card13 .scale {
+  html body .container-fluid .section4 .slider-wrapper .image-list .car1 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car2 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car3 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car4 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car5 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car6 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car7 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car8 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car9 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car10 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car11 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car12 .scale,
+  html body .container-fluid .section4 .slider-wrapper .image-list .car13 .scale {
     transform: scale(1);
     border-radius: 30px;
   }
 }
 html body .container-fluid .section05 {
-  margin-top: 15em;
+  margin-top: 10em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3100,6 +3085,7 @@ html body .container-fluid .section7 .elementor7 .image-list .car8 .scale {
 }
 html body .container-fluid .section8 {
   background-image: url(/assest/media/h2_bg2.png);
+  background-color: #000;
   width: 100%;
   height: 70vh;
   background-position: center;

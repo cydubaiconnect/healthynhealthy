@@ -192,6 +192,63 @@
             </div>
           </header>
         </div>
+
+        <div class="sideleft">
+          <div class="sidebar">
+              <nav>
+
+               <div class="closeTag" style="text-align: right; padding-right: 10%; font-size: 2em; margin-bottom: .5em;"  onclick="closebarMenu()"><box-icon name='arrow-back' color='#00a149' ></box-icon></div>
+                  <ul>
+                      <li class="dropdown accordion-list">MENU <box-icon name='chevron-down'></box-icon>
+                          <ul class="nested-list">
+                              <li><a href="our-menu.html">MENU CAFE</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown accordion-list">SHOP <box-icon name='chevron-down'></box-icon>
+                          <ul class="nested-list">
+                              <li>BAKERY</li>
+                              <li>WHOLE GRAIN VEGAN</li>
+                              <li>WHOLE GRAIN NON-VEGAN</li>
+                              <li>WHOLE GRAIN GLUTEN FREE</li>
+                              <li>KETO</li>
+                              <li>GROCERY</li>
+                              <li>EBOOKS</li>
+                              <li>FITNESS ACCESSORIES</li>
+                          </ul>
+                      </li>
+                      <li>BLOG</li>
+                      <li class="dropdown accordion-list">ABOUT US <box-icon name='chevron-down'></box-icon>
+                          <ul class="nested-list">
+                              <li>OUR FOUNDER</li>
+                              <li>ACCOLADES</li>
+                              <li>OUR STORY</li>
+                              <li>OUR BRAND STORY</li>
+                              <li>WHO WE ARE</li>
+                              <li>NUTRITION MEDIA</li>
+                              <li>HEALTH + SAFETY</li>
+                          </ul>
+                      </li>
+                      <li class="dropdown accordion-list">CONTACT <box-icon name='chevron-down'></box-icon>
+                          <ul class="nested-list">
+                              <li>MEAL PREP</li>
+                              <li>CHILD NUTRITION</li>
+                              <li>CORPORATE WELLNESS</li>
+                              <li>SCHOOL NUTRITION</li>
+                              <li>GREEN SMOOTHIE PACK</li>
+                              <li>HEALTHY GROCERY SHOPPER</li>
+                          </ul>
+                      </li>
+                  </ul>
+              </nav>
+
+              <div class="blogIcons">
+                <span><box-icon name='instagram-alt' type='logo' color='#00a149' ></box-icon></span>
+                <span><box-icon name='facebook-circle' type='logo' color='#00a149' ></box-icon></span>
+                <span><box-icon name='whatsapp-square' type='logo' color='#00a149' ></box-icon></span>
+                <span><box-icon name='twitter' type='logo' color='#00a149' ></box-icon></span>
+              </div>
+          </div>
+      </div>
        
 
 
@@ -424,6 +481,24 @@
     research.style.display = "none";
     head.style.display = "flex";
     }
+
+
+
+
+
+    
+
+  let bar = document.querySelector('.sideleft');
+  function showActive(){
+    bar.classList.toggle('sideshow');
+    bar.classList.remove('closeBarMenu');
+  }
+
+  function closebarMenu() {
+    bar.classList.toggle('closeBarMenu');
+    bar.classList.remove('sideshow');
+    
+  }
         </script>
 
 
